@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{A81BBBB6-B3A4-49F1-AEED-C7C8CDE630D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{ADBB1615-4BB0-460C-8810-E60F1DB335ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{F5894C66-C43B-4760-882E-3A726B187FE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2926E387-C785-4D37-BCB8-5444A3001B5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{3B650888-B8C6-4B28-85CB-AC5BFAC44BD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{840ED490-4259-45E2-8FD7-06060A73050E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "View", "View", "{1F5F66E0-BB9D-40C0-B02F-6077E5AA6A26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{2579799F-4E6B-47E2-8864-6FB13667884D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Business", "SportsStore.Business\SportsStore.Business.csproj", "{B5E23F2B-9967-4CF1-B39F-26710459BFA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Contracts", "SportsStore.Contracts\SportsStore.Contracts.csproj", "{610B9036-AED6-48B9-93B0-DAA007B093E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Domain", "SportsStore.Domain\SportsStore.Domain.csproj", "{A69821C7-68F6-43CC-B5AB-BAFCAB515D61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Infrastructure", "SportsStore.Infrastructure\SportsStore.Infrastructure.csproj", "{7D95494C-1335-4070-88E3-6978C4AF73C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Persistence", "SportsStore.Persistence\SportsStore.Persistence.csproj", "{EA679BAB-E946-4C98-9500-DFDD2967CBA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Service", "SportsStore.Service\SportsStore.Service.csproj", "{5410F1C5-A011-4412-B571-ABC769C91D8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Tests", "SportsStore.Tests\SportsStore.Tests.csproj", "{F204B53D-3BB4-4EE5-B237-DC36527DF40A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.View", "SportsStore.View\SportsStore.View.csproj", "{47E31A86-4654-4B82-B10F-BBE5BE526825}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5E23F2B-9967-4CF1-B39F-26710459BFA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5E23F2B-9967-4CF1-B39F-26710459BFA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5E23F2B-9967-4CF1-B39F-26710459BFA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5E23F2B-9967-4CF1-B39F-26710459BFA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{610B9036-AED6-48B9-93B0-DAA007B093E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{610B9036-AED6-48B9-93B0-DAA007B093E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{610B9036-AED6-48B9-93B0-DAA007B093E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{610B9036-AED6-48B9-93B0-DAA007B093E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A69821C7-68F6-43CC-B5AB-BAFCAB515D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A69821C7-68F6-43CC-B5AB-BAFCAB515D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A69821C7-68F6-43CC-B5AB-BAFCAB515D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A69821C7-68F6-43CC-B5AB-BAFCAB515D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D95494C-1335-4070-88E3-6978C4AF73C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D95494C-1335-4070-88E3-6978C4AF73C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D95494C-1335-4070-88E3-6978C4AF73C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D95494C-1335-4070-88E3-6978C4AF73C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA679BAB-E946-4C98-9500-DFDD2967CBA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA679BAB-E946-4C98-9500-DFDD2967CBA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA679BAB-E946-4C98-9500-DFDD2967CBA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA679BAB-E946-4C98-9500-DFDD2967CBA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5410F1C5-A011-4412-B571-ABC769C91D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5410F1C5-A011-4412-B571-ABC769C91D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5410F1C5-A011-4412-B571-ABC769C91D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5410F1C5-A011-4412-B571-ABC769C91D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F204B53D-3BB4-4EE5-B237-DC36527DF40A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F204B53D-3BB4-4EE5-B237-DC36527DF40A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F204B53D-3BB4-4EE5-B237-DC36527DF40A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F204B53D-3BB4-4EE5-B237-DC36527DF40A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47E31A86-4654-4B82-B10F-BBE5BE526825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47E31A86-4654-4B82-B10F-BBE5BE526825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47E31A86-4654-4B82-B10F-BBE5BE526825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47E31A86-4654-4B82-B10F-BBE5BE526825}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B5E23F2B-9967-4CF1-B39F-26710459BFA5} = {3B650888-B8C6-4B28-85CB-AC5BFAC44BD0}
+		{610B9036-AED6-48B9-93B0-DAA007B093E8} = {A81BBBB6-B3A4-49F1-AEED-C7C8CDE630D4}
+		{A69821C7-68F6-43CC-B5AB-BAFCAB515D61} = {ADBB1615-4BB0-460C-8810-E60F1DB335ED}
+		{7D95494C-1335-4070-88E3-6978C4AF73C5} = {2579799F-4E6B-47E2-8864-6FB13667884D}
+		{EA679BAB-E946-4C98-9500-DFDD2967CBA1} = {840ED490-4259-45E2-8FD7-06060A73050E}
+		{5410F1C5-A011-4412-B571-ABC769C91D8B} = {F5894C66-C43B-4760-882E-3A726B187FE0}
+		{F204B53D-3BB4-4EE5-B237-DC36527DF40A} = {2926E387-C785-4D37-BCB8-5444A3001B5A}
+		{47E31A86-4654-4B82-B10F-BBE5BE526825} = {1F5F66E0-BB9D-40C0-B02F-6077E5AA6A26}
+	EndGlobalSection
+EndGlobal
