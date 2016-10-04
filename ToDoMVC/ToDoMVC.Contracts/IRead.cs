@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace ToDoMVC.Contracts
 {
-    public interface IRead<T> where T : class
+    public interface IRead<T>
     {
-        IQueryable ReadQueryable();
-        IEnumerable ReadEnumerable();
-        IList ReadList();
+        IEnumerable<T> ReadEnumerable();
     }
 }

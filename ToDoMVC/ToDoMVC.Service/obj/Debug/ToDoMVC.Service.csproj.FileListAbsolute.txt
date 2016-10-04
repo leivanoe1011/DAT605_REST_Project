@@ -39,3 +39,15 @@ D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMV
 D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\obj\Debug\ToDoMVC.Service.csprojResolveAssemblyReference.cache
 D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\obj\Debug\ToDoMVC.Service.dll
 D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\obj\Debug\ToDoMVC.Service.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Business.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Contracts.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Domain.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Business.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Contracts.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Domain.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Persistence.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\EntityFramework.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Persistence.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\EntityFramework.xml
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\EntityFramework.SqlServer.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\EntityFramework.SqlServer.xml
