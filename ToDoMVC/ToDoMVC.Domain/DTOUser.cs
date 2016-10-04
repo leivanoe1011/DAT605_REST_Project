@@ -9,6 +9,6 @@ namespace ToDoMVC.Domain
     public class DTOUser
     {
         public string Name { get; set; }
-        public ICollection<DTOToDo> ToDos { get; set; }
+        public IList<DTOToDo> ToDo { get; set; }
     }
 }
