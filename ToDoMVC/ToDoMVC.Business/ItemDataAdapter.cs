@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,38 +9,36 @@ using ToDoMVC.Persistence;
 
 namespace ToDoMVC.Business
 {
-    public class UserDataAdapter : IDataAdapter<UserDto>
+    class ItemDataAdapter : IDataAdapter<ItemDto>
     {
-        private readonly IRepository<User> _repository;
+        private readonly IRepository<Item> _repository;
 
-        public UserDataAdapter(IRepository<User> repository)
+        public ItemDataAdapter (IRepository<Item> repository)
         {
             _repository = repository;
         }
 
-        public void Insert(UserDto entity)
-        {
-            var user = new User();
-
-            _repository.Insert(user);
-        }
-
-        public void Delete(UserDto entity)
+        public void Delete(ItemDto entity)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<UserDto> SearchFor()
+        public IEnumerable<ItemDto> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<UserDto> GetAll()
+        public ItemDto GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public UserDto GetById(int id)
+        public void Insert(ItemDto entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<ItemDto> SearchFor()
         {
             throw new NotImplementedException();
         }

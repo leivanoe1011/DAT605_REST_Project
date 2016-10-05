@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoMVC.Business", "ToDoMVC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoMVC.View", "ToDoMVC.View\ToDoMVC.View.csproj", "{FC510A89-FF7D-472C-B06D-7182D27A07C8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FakeDataLayer", "FakeDataLayer", "{0377B19B-8C54-43DC-9C37-BAB6B74AB581}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

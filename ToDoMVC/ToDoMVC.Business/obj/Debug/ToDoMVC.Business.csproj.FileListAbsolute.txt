@@ -11,3 +11,16 @@ D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMV
 D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Debug\EntityFramework.dll
 D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Debug\ToDoMVC.Persistence.pdb
 D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Debug\EntityFramework.xml
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Debug\ToDoMVC.Business.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Debug\ToDoMVC.Business.pdb
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Debug\ToDoMVC.Contracts.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Debug\ToDoMVC.Domain.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Debug\ToDoMVC.Persistence.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Debug\EntityFramework.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Debug\ToDoMVC.Contracts.pdb
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Debug\ToDoMVC.Domain.pdb
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Debug\ToDoMVC.Persistence.pdb
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Debug\EntityFramework.xml
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\obj\Debug\ToDoMVC.Business.csprojResolveAssemblyReference.cache
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\obj\Debug\ToDoMVC.Business.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\obj\Debug\ToDoMVC.Business.pdb

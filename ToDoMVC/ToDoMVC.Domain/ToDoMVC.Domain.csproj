@@ -40,10 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DTOItem.cs" />
+    <Compile Include="ItemDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DTOToDo.cs" />
-    <Compile Include="DTOUser.cs" />
+    <Compile Include="ToDoDto.cs" />
+    <Compile Include="UserDto.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

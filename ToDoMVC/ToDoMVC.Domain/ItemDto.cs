@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace ToDoMVC.Domain
 {
-    public class DTOUser
+    public class ItemDto
     {
         public string Name { get; set; }
-        public IList<DTOToDo> ToDo { get; set; }
     }
 }

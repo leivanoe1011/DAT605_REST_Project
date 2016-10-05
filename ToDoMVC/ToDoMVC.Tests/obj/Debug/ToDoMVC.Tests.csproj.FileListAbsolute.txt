@@ -4,3 +4,9 @@ D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMV
 D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Tests\obj\Debug\ToDoMVC.Tests.csprojResolveAssemblyReference.cache
 D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Tests\obj\Debug\ToDoMVC.Tests.dll
 D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Tests\obj\Debug\ToDoMVC.Tests.pdb
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Tests\bin\Debug\ToDoMVC.Tests.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Tests\bin\Debug\ToDoMVC.Tests.pdb
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Tests\obj\Debug\ToDoMVC.Tests.csprojResolveAssemblyReference.cache
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Tests\obj\Debug\ToDoMVC.Tests.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Tests\obj\Debug\ToDoMVC.Tests.pdb
