@@ -34,4 +34,11 @@ $ npm install --save todomvc-app-css
 * To access the database, Go to the [SQL instances page](https://console.cloud.google.com/projectselector/sql/instances?_ga=1.226861209.544085363.1475456239), selet project DAT605-todomvc.
 * Set root password to match lab1 default password
 * Connect using MySQL client in the Cloud Shell:  [from here](https://console.cloud.google.com/home/dashboard?project=causal-calculus-145618&_ga=1.230524056.544085363.1475456239), find this item:
+
 ![Launch Google Cloud Shell](images/Launch\ Cloud\ Shell.jpg?raw=true "Google Cloud Shell")
+
+* [more google db help here](https://cloud.google.com/sql/docs/quickstart)
+```
+...:~$ gcloud beta sql connect dat605-todomvc --user-output-enabled=root
+Enter password: #######
+
