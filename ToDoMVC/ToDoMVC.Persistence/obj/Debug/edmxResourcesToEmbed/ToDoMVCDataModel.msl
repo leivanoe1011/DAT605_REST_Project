@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ToDoMVCModelStoreContainer" CdmEntityContainer="ToDoMVCEntities">
+    <EntitySetMapping Name="Items">
+      <EntityTypeMapping TypeName="ToDoMVCModel.Item">
+        <MappingFragment StoreEntitySet="Item">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ToDoName" ColumnName="ToDoName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ToDoes">
+      <EntityTypeMapping TypeName="ToDoMVCModel.ToDo">
+        <MappingFragment StoreEntitySet="ToDo">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ToDoMVCModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

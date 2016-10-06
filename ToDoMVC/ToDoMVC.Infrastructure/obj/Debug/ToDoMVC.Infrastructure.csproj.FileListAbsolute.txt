@@ -1,0 +1,10 @@
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Infrastructure\bin\Debug\ToDoMVC.Infrastructure.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Infrastructure\bin\Debug\ToDoMVC.Infrastructure.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Infrastructure\obj\Debug\ToDoMVC.Infrastructure.csprojResolveAssemblyReference.cache
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Infrastructure\obj\Debug\ToDoMVC.Infrastructure.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Infrastructure\obj\Debug\ToDoMVC.Infrastructure.pdb
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Infrastructure\bin\Debug\ToDoMVC.Infrastructure.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Infrastructure\bin\Debug\ToDoMVC.Infrastructure.pdb
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Infrastructure\obj\Debug\ToDoMVC.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Infrastructure\obj\Debug\ToDoMVC.Infrastructure.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Infrastructure\obj\Debug\ToDoMVC.Infrastructure.pdb

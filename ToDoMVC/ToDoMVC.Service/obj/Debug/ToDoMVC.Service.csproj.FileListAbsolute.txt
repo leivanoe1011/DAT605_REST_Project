@@ -1,0 +1,106 @@
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ApplicationInsights.config
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\csc.exe
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\System.Collections.Immutable.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\System.Reflection.Metadata.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\vbc.exe
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\VBCSCompiler.exe
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\VBCSCompiler.exe.config
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Service.dll.config
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Service.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Service.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.DependencyCollector.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.Web.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.WindowsServer.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.ApplicationInsights.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Newtonsoft.Json.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\System.Net.Http.Formatting.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\System.Web.Http.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\System.Web.Http.WebHost.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.DependencyCollector.xml
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.Web.xml
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.WindowsServer.xml
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.ApplicationInsights.xml
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Newtonsoft.Json.xml
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\System.Net.Http.Formatting.xml
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\System.Web.Http.xml
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\System.Web.Http.WebHost.xml
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\obj\Debug\ToDoMVC.Service.csprojResolveAssemblyReference.cache
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\obj\Debug\ToDoMVC.Service.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\obj\Debug\ToDoMVC.Service.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Business.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Contracts.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Domain.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Business.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Contracts.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Domain.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Persistence.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\EntityFramework.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Persistence.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\EntityFramework.xml
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\EntityFramework.SqlServer.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\EntityFramework.SqlServer.xml
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ApplicationInsights.config
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\csc.exe
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\vbc.exe
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\VBCSCompiler.exe
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Service.dll.config
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Service.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Service.pdb
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\EntityFramework.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\EntityFramework.SqlServer.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.Web.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.ApplicationInsights.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Newtonsoft.Json.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\System.Net.Http.Formatting.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\System.Web.Http.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\System.Web.Http.WebHost.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Business.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Contracts.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Domain.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Persistence.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Business.pdb
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Contracts.pdb
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Domain.pdb
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Persistence.pdb
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\EntityFramework.xml
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\EntityFramework.SqlServer.xml
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.Web.xml
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.ApplicationInsights.xml
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\Newtonsoft.Json.xml
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\System.Net.Http.Formatting.xml
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\System.Web.Http.xml
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\System.Web.Http.WebHost.xml
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\obj\Debug\ToDoMVC.Service.csprojResolveAssemblyReference.cache
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\obj\Debug\ToDoMVC.Service.dll
+C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\obj\Debug\ToDoMVC.Service.pdb
