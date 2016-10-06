@@ -24,3 +24,9 @@ $ npm install --save todomvc-common
 $ npm install --save todomvc-app-css
 ```
 * for data persistence, use RESTful API to send JSON for database queries
+---
+*06 Oct 2016*
+* Setup Google Cloud Database Instance:
+
+![SQL Database Instance](images/SQL\ Cloud\ Database.jpg?raw=true "Google DB")
+---
