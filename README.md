@@ -40,5 +40,35 @@ $ npm install --save todomvc-app-css
 * [more google db help here](https://cloud.google.com/sql/docs/quickstart)
 ```
 ...:~$ gcloud beta sql connect dat605-todomvc --user-output-enabled=root
-Enter password: #######
 
+Enter password: #######
+```
+* check authorized IP networks.
+Temporarily set to 0.0.0.0/0 to allow access.
+```
+mysql> CREATE DATABASE todomvc;
+Query OK, 1 row affected (3.20 sec)
+mysql> use todomvc;
+Database changed
+mysql> CREATE TABLE mytodos(task VARCHAR(255), complete boolean);
+Query OK, 0 rows affected (0.02 sec)
+mysql> INSERT INTO mytodos (task, complete) values('mow the lawn', FALSE);
+Query OK, 1 row affected (0.00 sec)
+mysql> show tables
+    -> ;
++-------------------+
+| Tables_in_todomvc |
++-------------------+
+| mytodos           |
++-------------------+
+1 row in set (0.00 sec)
+mysql> SELECT * from mytodos;
++--------------+----------+
+| task         | complete |
++--------------+----------+
+| mow the lawn |        0 |
++--------------+----------+
+1 row in set (0.00 sec)
+mysql> quit
+Bye
+```
