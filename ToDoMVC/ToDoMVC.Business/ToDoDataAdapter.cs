@@ -9,7 +9,7 @@ using ToDoMVC.Persistence;
 
 namespace ToDoMVC.Business
 {
-    class ToDoDataAdapter : IDataAdapter<ToDoDto>
+    class ToDoDataAdapter : IDataAdapter<DataToDo>
     {
         private readonly IRepository<ToDo> _repository;
 
@@ -18,27 +18,27 @@ namespace ToDoMVC.Business
             _repository = repository;
         }
 
-        public void Delete(ToDoDto entity)
+        public void Delete(DataToDo entity)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<ToDoDto> GetAll()
+        public IEnumerable<DataToDo> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public ToDoDto GetById(int id)
+        public DataToDo GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(ToDoDto entity)
+        public void Insert(DataToDo entity)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<ToDoDto> SearchFor()
+        public IEnumerable<DataToDo> SearchFor()
         {
             throw new NotImplementedException();
         }

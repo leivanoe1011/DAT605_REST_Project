@@ -9,7 +9,7 @@ using ToDoMVC.Contracts;
 
 namespace ToDoMVC.Persistence
 {
-    class UserRepository : IRepository<User>
+    public class UserRepository : IRepository<User>
     {
         private readonly DbSet<User> _dbSet;
 

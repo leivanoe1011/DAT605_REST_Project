@@ -11,9 +11,9 @@ namespace ToDoMVC.Service.Controllers
 {
     public class ToDoController : ApiController
     {
-        private IDataAdapter<ToDoDto> _todoDataAdapter;
+        private IDataAdapter<DataToDo> _todoDataAdapter;
 
-        public ToDoController(IDataAdapter<ToDoDto> todoDataAdapter)
+        public ToDoController(IDataAdapter<DataToDo> todoDataAdapter)
         {
             _todoDataAdapter = todoDataAdapter;
         }
@@ -23,22 +23,22 @@ namespace ToDoMVC.Service.Controllers
             //defautl for testing only
         }
 
-        public IEnumerable<ToDoDto> Get()
+        public IEnumerable<DataToDo> Get()
         {
             return _todoDataAdapter.GetAll();
         }
 
-        public ToDoDto Get(int id)
+        public DataToDo Get(int id)
         {
             return _todoDataAdapter.GetById(id);
         }
 
-        public void Post(ToDoDto todo)
+        public void Post(DataToDo todo)
         {
             _todoDataAdapter.Insert(todo);
         }
 
-        public void Delete(ToDoDto todo)
+        public void Delete(DataToDo todo)
         {
             _todoDataAdapter.Delete(todo);
         }

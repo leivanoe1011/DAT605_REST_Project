@@ -3,42 +3,48 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web.DynamicData;
 using System.Web.Http;
+using ToDoMVC.Business;
 using ToDoMVC.Contracts;
 using ToDoMVC.Domain;
+using ToDoMVC.Infrastructure;
 
 namespace ToDoMVC.Service.Controllers
 {
     public class ItemController : ApiController
     {
-        private IDataAdapter<ItemDto> _itemDataAdapter;
+        private readonly IDataAdapter<DataItem> _itemDataAdapter;
 
-        public ItemController(IDataAdapter<ItemDto> itemDataAdapter)
+        private readonly ItemFactory _factory;
+
+        public ItemController(IDataAdapter<DataItem> itemDataAdapter)
         {
             _itemDataAdapter = itemDataAdapter;
         }
 
         public ItemController()
         {
-            //default for testing only
+            _factory = new ItemFactory();
+            _itemDataAdapter = _factory.CreateItemAdapter();
         }
 
-        public IEnumerable<ItemDto> Get()
+        public IEnumerable<DataItem> Get()
         {
             return _itemDataAdapter.GetAll();
         }
 
-        public ItemDto Get(int id)
+        public DataItem Get(int id)
         {
             return _itemDataAdapter.GetById(id);
         }
 
-        public void Post(ItemDto item)
+        public void Post(DataItem item)
         {
             _itemDataAdapter.Insert(item);
         }
 
-        public void Delete(ItemDto item)
+        public void Delete(DataItem item)
         {
             _itemDataAdapter.Delete(item);
         }

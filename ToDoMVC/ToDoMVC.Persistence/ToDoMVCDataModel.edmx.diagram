@@ -4,12 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="ec33b5a1bcf84ac88d12dff041fd4f7d" Name="Diagram1">
-        <EntityTypeShape EntityType="ToDoMVCModel.Item" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="ToDoMVCModel.ToDo" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="ToDoMVCModel.User" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+      <Diagram DiagramId="9ddbd823240c47e7b5dac555453e45d2" Name="Diagram1">
+        <EntityTypeShape EntityType="ToDoMVCModel.Item" Width="1.5" PointX="7.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ToDoMVCModel.ToDo" Width="1.5" PointX="5.125" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ToDoMVCModel.User" Width="1.5" PointX="2.5" PointY="2.375" IsExpanded="true" />
         <AssociationConnector Association="ToDoMVCModel.FK_Item_ToDo" ManuallyRouted="false" />
-        <AssociationConnector Association="ToDoMVCModel.FK_ToDo_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ToDoMVCModel.FK_ToDo_User" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
