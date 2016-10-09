@@ -32,7 +32,7 @@ namespace ToDoMVC.Infrastructure
             return new ItemRepository(items);
         }
 
-        private IDataMapper<Item, DataItem> CreateItemMapper()
+        private IDataMapper<DataItem, Item> CreateItemMapper()
         {
             return new ItemDataMapper();
         }

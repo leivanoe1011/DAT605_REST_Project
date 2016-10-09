@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace ToDoMVC.Contracts
 {
-    public interface IDataMapper<D, O>
+    public interface IDbSetMapper<out O, in D>
     {
-        IList<D> MapToDto(IEnumerable<O> obj);
-        IEnumerable<D> MapToDto(IQueryable<O> obj);
     }
 }

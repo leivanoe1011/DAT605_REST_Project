@@ -12,9 +12,9 @@ namespace ToDoMVC.Business
     public class ItemDataAdapter : IDataAdapter<DataItem>
     {
         private readonly IRepository<Item> _repository;
-        private readonly IDataMapper<Item, DataItem> _dataMapper;
+        private readonly IDataMapper<DataItem, Item> _dataMapper;
 
-        public ItemDataAdapter (IRepository<Item> repository, IDataMapper<Item, DataItem> dataMapper)
+        public ItemDataAdapter (IRepository<Item> repository, IDataMapper<DataItem, Item> dataMapper)
         {
             _repository = repository;
             _dataMapper = dataMapper;
@@ -27,15 +27,9 @@ namespace ToDoMVC.Business
 
         public IEnumerable<DataItem> GetAll()
         {
-            var dataItems = new List<DataItem>();
             var allItems = _repository.GetAll();
 
-            foreach (var i in allItems)
-            {
-                dataItems.Add(_dataMapper.MapToObject(i));
-            }
-
-            return dataItems;
+            return _dataMapper.MapToDto(allItems);
         }
 
         public DataItem GetById(int id)

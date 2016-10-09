@@ -18,7 +18,8 @@ namespace ToDoMVC.Business
         {
             _iDataMapper = iDataMapper;
         }
-
+        
+        /*
         public User MapToDto(DataUser obj)
         {
             var user = new User {Name = obj.Name};
@@ -31,6 +32,7 @@ namespace ToDoMVC.Business
             return user;
         }
 
+        
         public DataUser MapToObject(User obj)
         {
             var user = new DataUser {Name = obj.Name};
@@ -41,6 +43,17 @@ namespace ToDoMVC.Business
             }
 
             return user;
+        }
+        */
+
+        public IList<User> MapToDto(IEnumerable<DataUser> obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<User> MapToDto(IQueryable<DataUser> obj)
+        {
+            throw new NotImplementedException();
         }
     }
 }

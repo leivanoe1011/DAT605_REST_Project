@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,34 +10,31 @@ using ToDoMVC.Persistence;
 
 namespace ToDoMVC.Business
 {
-    public class ToDoDataMapper : IDataMapper<ToDo, DataToDo>
+    public class ToDoDataMapper : IDataMapper<DataToDo, ToDo>
     {
-        private readonly IDataMapper<Item, DataItem> _iDataMapper;
+        private readonly IDataMapper<DataItem, Item> _iDataMapper;
 
-        public ToDoDataMapper(IDataMapper<Item, DataItem> iDataMapper)
+        public ToDoDataMapper(IDataMapper<DataItem, Item> iDataMapper)
         {
             _iDataMapper = iDataMapper;
         }
 
-        public ToDo MapToDto(DataToDo obj)
+        public IList<DataToDo> MapToDto(IEnumerable<ToDo> obj)
         {
-            var todo = new ToDo {Name = obj.Name};
-
-            foreach (var i in obj.Items)
-            {
-                todo.Items.Add(_iDataMapper.MapToDto(i));
-            }
-
-            return todo;
+            throw new NotImplementedException();
         }
 
-        public DataToDo MapToObject(ToDo obj)
+        public IEnumerable<DataToDo> MapToDto(IQueryable<ToDo> obj)
         {
-            var todo = new DataToDo {Name = obj.Name};
+            var todo = new List<DataToDo>();
 
-            foreach (var i in obj.Items)
+            foreach (var i in obj)
             {
-                todo.Items.Add(_iDataMapper.MapToObject(i));
+                todo.Add(new DataToDo()
+                {
+                    Name = i.Name,
+                    Items = _iDataMapper.MapToDto(i.Items)
+                });
             }
 
             return todo;

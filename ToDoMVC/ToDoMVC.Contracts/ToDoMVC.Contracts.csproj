@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="IDataAdapter.cs" />
     <Compile Include="IDataMapper.cs" />
+    <Compile Include="IDbSetMapper.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -9,20 +9,44 @@ using ToDoMVC.Persistence;
 
 namespace ToDoMVC.Business
 {
-    public class ItemDataMapper : IDataMapper<Item, DataItem>
+    public class ItemDataMapper : IDataMapper<DataItem, Item>, IDbSetMapper<Item, DataItem>
     {
-        public Item MapToDto(DataItem obj)
+        public IList<DataItem> MapToDto(IEnumerable<Item> obj)
         {
-            var item = new Item {Name = obj.Name};
+            var returnList = new List<DataItem>();
 
-            return item;
+            foreach (var i in obj)
+            {
+                returnList.Add(new DataItem() { Name = i.Name });
+            }
+
+            return returnList;
         }
 
-        public DataItem MapToObject(Item obj)
+        public IEnumerable<DataItem> MapToDto(IQueryable<Item> obj)
         {
-            var item = new DataItem {Name = obj.Name};
+            var returnList = new List<DataItem>();
 
-            return item;
+            foreach (var i in obj)
+            {
+                returnList.Add(new DataItem() {Name = i.Name});
+            }
+
+            return returnList;
+        }
+
+        public IQueryable<Item> MapToObject(IEnumerable<DataItem> obj)
+        {
+            
+            var returnItem = new List<Item>();
+
+            foreach (var i in obj)
+            {
+                returnItem.Add(new Item() {Name = i.Name});
+            }
+
+
+            return returnItem.AsQueryable();
         }
     }
 }
