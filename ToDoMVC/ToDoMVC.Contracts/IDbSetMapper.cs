@@ -8,5 +8,6 @@ namespace ToDoMVC.Contracts
 {
     public interface IDbSetMapper<out O, in D>
     {
+        IQueryable<O> MapToObject(IEnumerable<D> obj);
     }
 }
