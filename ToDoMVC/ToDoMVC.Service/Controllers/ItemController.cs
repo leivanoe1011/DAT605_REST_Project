@@ -15,7 +15,6 @@ namespace ToDoMVC.Service.Controllers
     public class ItemController : ApiController
     {
         private readonly IDataAdapter<DataItem> _itemDataAdapter;
-
         private readonly ItemFactory _factory;
 
         public ItemController(IDataAdapter<DataItem> itemDataAdapter)

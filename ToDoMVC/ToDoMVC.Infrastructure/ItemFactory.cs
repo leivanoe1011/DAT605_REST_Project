@@ -8,6 +8,7 @@ using ToDoMVC.Business;
 using ToDoMVC.Contracts;
 using ToDoMVC.Domain;
 using ToDoMVC.Persistence;
+using AutoMapper;
 
 //REFACTOR ALL TO ABSTRACT FACTORIES!!!!!!!!!!!!!
 
@@ -32,9 +33,11 @@ namespace ToDoMVC.Infrastructure
             return new ItemRepository(items);
         }
 
-        private IDataMapper<DataItem, Item> CreateItemMapper()
+        private IMapper CreateItemMapper()
         {
-            return new ItemDataMapper();
+            var mapper = new MapperConfiguration(x => x.CreateMap<Item, DataItem>());
+
+            return new Mapper(mapper);
         }
 
         public IDataAdapter<DataItem> CreateItemAdapter()

@@ -21,3 +21,5 @@ D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMV
 D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Infrastructure\bin\Debug\ToDoMVC.Persistence.pdb
 D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Infrastructure\bin\Debug\EntityFramework.xml
 D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Infrastructure\bin\Debug\AutoMapper.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Infrastructure\bin\Debug\AutoMapper.xml
