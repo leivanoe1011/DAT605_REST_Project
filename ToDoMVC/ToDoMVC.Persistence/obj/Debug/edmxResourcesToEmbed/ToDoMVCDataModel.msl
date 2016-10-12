@@ -12,8 +12,8 @@
     <EntitySetMapping Name="ToDoes">
       <EntityTypeMapping TypeName="ToDoMVCModel.ToDo">
         <MappingFragment StoreEntitySet="ToDo">
-          <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

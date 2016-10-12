@@ -161,6 +161,10 @@
       <Project>{290c044b-d01f-4684-839a-5b8fa000c18c}</Project>
       <Name>ToDoMVC.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ToDoMVC.Infrastructure\ToDoMVC.Infrastructure.csproj">
+      <Project>{80248A8C-BA74-4E7E-9081-9FC45D5AEAD4}</Project>
+      <Name>ToDoMVC.Infrastructure</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ToDoMVC.Persistence\ToDoMVC.Persistence.csproj">
       <Project>{C9EB7247-1008-4497-8618-A65ED6054E2D}</Project>
       <Name>ToDoMVC.Persistence</Name>

@@ -9,39 +9,36 @@ using ToDoMVC.Contracts;
 
 using ToDoMVC.Persistence;
 using ToDoMVC.Domain;
+using ToDoMVC.Infrastructure;
 
 namespace ToDoMVC.Service.Controllers
 {
     public class UserController : ApiController
     {
-        private IDataAdapter<UserDto> _userDataAdapter;
+        private IDataAdapter<DataUser> _userDataAdapter;
 
-        public UserController(IDataAdapter<UserDto> userDataAdapter)
+        public UserController()//IDataAdapter<UserDto> userDataAdapter)
         {
-            _userDataAdapter = userDataAdapter;
+            var factory = new UserFactory();
+            _userDataAdapter = factory.CreateUserAdapter();
         }
 
-        public UserController()
-        {
-            //default for testing only
-        }
-        
-        public IEnumerable<UserDto> Get()
+        public IEnumerable<DataUser> Get()
         {
             return _userDataAdapter.GetAll();
         }
 
-        public UserDto Get(int id)
+        public DataUser Get(int id)
         {
             return _userDataAdapter.GetById(id);
         }
 
-        public void Post(UserDto user)
+        public void Post(DataUser user)
         {
             _userDataAdapter.Insert(user);
         }
 
-        public void Delete(UserDto user)
+        public void Delete(DataUser user)
         {
             _userDataAdapter.Delete(user);
         }

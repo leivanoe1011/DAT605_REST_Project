@@ -41,9 +41,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ItemDataAdapter.cs" />
+    <Compile Include="ItemDataMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ToDoDataAdapter.cs" />
+    <Compile Include="ToDoDataMapper.cs" />
     <Compile Include="UserDataAdapter.cs" />
+    <Compile Include="UserDataMapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ToDoMVC.Contracts\ToDoMVC.Contracts.csproj">

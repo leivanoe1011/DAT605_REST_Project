@@ -10,7 +10,7 @@ using ToDoMVC.Persistence;
 
 namespace ToDoMVC.Business
 {
-    public class UserDataAdapter : IDataAdapter<UserDto>
+    public class UserDataAdapter : IDataAdapter<DataUser>
     {
         private readonly IRepository<User> _repository;
 
@@ -19,29 +19,29 @@ namespace ToDoMVC.Business
             _repository = repository;
         }
 
-        public void Insert(UserDto entity)
-        {
-            var user = new User();
-
-            _repository.Insert(user);
-        }
-
-        public void Delete(UserDto entity)
+        public void Insert(DataUser entity)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<UserDto> SearchFor()
+        public void Delete(DataUser entity)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<UserDto> GetAll()
+        public IEnumerable<DataUser> SearchFor()
         {
             throw new NotImplementedException();
         }
 
-        public UserDto GetById(int id)
+        public IEnumerable<DataUser> GetAll()
+        {
+            var allUsers = _repository.GetAll();
+
+            return null;
+        }
+
+        public DataUser GetById(int id)
         {
             throw new NotImplementedException();
         }
