@@ -33,7 +33,7 @@ namespace ToDoMVC.Business
                 todo.Add(new DataToDo()
                 {
                     Name = i.Name,
-                    Items = _iDataMapper.MapToDto(i.Items)
+                    //Items = _iDataMapper.MapToDto(i.Items)
                 });
             }
 

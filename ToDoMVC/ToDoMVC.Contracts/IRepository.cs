@@ -14,5 +14,6 @@ namespace ToDoMVC.Contracts
         IQueryable<T> SearchFor(Expression<Func<T, bool>> predicate);
         IQueryable<T> GetAll();
         T GetById(int id);
+        void Save();
     }
 }

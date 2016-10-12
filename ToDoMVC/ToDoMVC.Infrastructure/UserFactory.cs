@@ -8,19 +8,15 @@ using ToDoMVC.Business;
 using ToDoMVC.Contracts;
 using ToDoMVC.Domain;
 using ToDoMVC.Persistence;
+using AutoMapper;
 
 namespace ToDoMVC.Infrastructure
 {
     public class UserFactory
     {
-        public UserFactory()
+        private ToDoMVCEntities CreateUserDbSet()
         {
-            
-        }
-
-        private DbSet<User> CreateUserDbSet()
-        {
-            return new ToDoMVCEntities().Users;
+            return new ToDoMVCEntities();
         }
 
         private IRepository<User> CreateUserRepository()
@@ -30,11 +26,28 @@ namespace ToDoMVC.Infrastructure
             return new UserRepository(users);
         }
 
+        private IMapper CreateUserMapper()
+        {
+            var mapper = new MapperConfiguration(x => x.CreateMap<User, DataUser>());
+            
+
+            return new Mapper(mapper);
+        }
+
+        private IMapper BackwardsMapper()
+        {
+            var otherMap = new MapperConfiguration(x => x.CreateMap<DataUser, User>());
+
+            return new Mapper(otherMap);
+        }
+
         public IDataAdapter<DataUser> CreateUserAdapter()
         {
             var repos = CreateUserRepository();
+            var mapper = CreateUserMapper();
+            var backMapper = BackwardsMapper();
 
-            return new UserDataAdapter(repos);
+            return new UserDataAdapter(repos, mapper, backMapper);
         }
     }
 }

@@ -16,11 +16,6 @@ namespace ToDoMVC.Infrastructure
 {
     public class ItemFactory
     {
-        public ItemFactory()
-        {
-            
-        }
-
         private DbSet<Item> CreateItemDbSet()
         {
             return new ToDoMVCEntities().Items;

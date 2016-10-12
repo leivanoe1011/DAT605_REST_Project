@@ -42,5 +42,10 @@ namespace ToDoMVC.Persistence
         {
             return _dbSet.Where(predicate);
         }
+
+        public void Save()
+        {
+            
+        }
     }
 }

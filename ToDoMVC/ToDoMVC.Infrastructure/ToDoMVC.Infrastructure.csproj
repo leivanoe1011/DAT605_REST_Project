@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ItemFactory.cs" />
+    <Compile Include="ToDoFactory.cs" />
     <Compile Include="UserFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

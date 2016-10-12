@@ -9,7 +9,7 @@ using ToDoMVC.Contracts;
 
 namespace ToDoMVC.Persistence
 {
-    class ToDoRepository : IRepository<ToDo>
+    public class ToDoRepository : IRepository<ToDo>
     {
         private readonly DbSet<ToDo> _dbSet;
 
@@ -20,27 +20,32 @@ namespace ToDoMVC.Persistence
 
         public void Delete(ToDo entity)
         {
-            throw new NotImplementedException();
+            _dbSet.Remove(entity);
         }
 
         public IQueryable<ToDo> GetAll()
         {
-            throw new NotImplementedException();
+            return _dbSet;
         }
 
         public ToDo GetById(int id)
         {
-            throw new NotImplementedException();
+            return _dbSet.Find(id);
         }
 
         public void Insert(ToDo entity)
         {
-            throw new NotImplementedException();
+            _dbSet.Add(entity);
         }
 
         public IQueryable<ToDo> SearchFor(Expression<Func<ToDo, bool>> predicate)
         {
-            throw new NotImplementedException();
+            return _dbSet.Where(predicate);
+        }
+
+        public void Save()
+        {
+            
         }
     }
 }

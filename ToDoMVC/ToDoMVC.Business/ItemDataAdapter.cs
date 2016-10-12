@@ -13,14 +13,12 @@ namespace ToDoMVC.Business
     public class ItemDataAdapter : IDataAdapter<DataItem>
     {
         private readonly IRepository<Item> _repository;
-        //private readonly IDataMapper<DataItem, Item> _dataMapper;
         private readonly IMapper _mapper;
 
-        public ItemDataAdapter (IRepository<Item> repository, IMapper mapper)//IDataMapper<DataItem, Item> dataMapper)
+        public ItemDataAdapter (IRepository<Item> repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;
-            //_dataMapper = dataMapper;
         }
 
         public void Delete(DataItem entity)
@@ -33,15 +31,12 @@ namespace ToDoMVC.Business
             var allItems = _repository.GetAll();
             var dataObjects = new List<DataItem>();
 
-            
-
             foreach (var i in allItems)
             {
                 dataObjects.Add(_mapper.Map<Item, DataItem>(i));
             }
 
             return dataObjects;
-            //return _dataMapper.MapToDto(allItems);
         }
 
         public DataItem GetById(int id)

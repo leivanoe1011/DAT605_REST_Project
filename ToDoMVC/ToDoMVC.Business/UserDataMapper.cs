@@ -18,33 +18,19 @@ namespace ToDoMVC.Business
         {
             _iDataMapper = iDataMapper;
         }
+
+        public UserDataMapper()
+        {
+            
+        }
         
-        /*
-        public User MapToDto(DataUser obj)
+        
+        public User MapToObject(DataUser obj)
         {
             var user = new User {Name = obj.Name};
-
-            foreach (var i in obj.ToDo)
-            {
-                user.ToDoes.Add(_iDataMapper.MapToDto(i));
-            }
-
+            
             return user;
         }
-
-        
-        public DataUser MapToObject(User obj)
-        {
-            var user = new DataUser {Name = obj.Name};
-
-            foreach (var i in obj.ToDoes)
-            {
-                user.ToDo.Add(_iDataMapper.MapToObject(i));
-            }
-
-            return user;
-        }
-        */
 
         public IList<User> MapToDto(IEnumerable<DataUser> obj)
         {

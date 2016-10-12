@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Validation;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -11,16 +12,19 @@ namespace ToDoMVC.Persistence
 {
     public class UserRepository : IRepository<User>
     {
+        private readonly ToDoMVCEntities _entities;
         private readonly DbSet<User> _dbSet;
 
-        public UserRepository(DbSet<User> datacontext)
+        public UserRepository(ToDoMVCEntities entities)
         {
-            _dbSet = datacontext;
+            _entities = entities;
+            _dbSet = _entities.Users;
         }
 
         public void Insert(User entity)
         {
             _dbSet.Add(entity);
+            Save();
         }
 
         public void Delete(User entity)
@@ -41,6 +45,11 @@ namespace ToDoMVC.Persistence
         public User GetById(int id)
         {
             return _dbSet.Find(id);
+        }
+
+        public void Save()
+        {
+            _entities.SaveChanges();
         }
     }
 }
