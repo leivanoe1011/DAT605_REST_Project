@@ -85,15 +85,25 @@ Configure (Free) account in Microsoft Azure Cloud Services
 * Login and Select Portal
 * Add SQL database
 * Database name
-```Todo_SQL```
+```
+Todo_SQL
+```
 * Create a new server
 
 Server name
-```4-cast```
+```
+4-cast
+```
 Server admin login
-```bobjones```
+```
+bobjones
+```
 
 Password  (see lab 1)
-``` \*\*\*\*\*\*\* ```
+```
+\*\*\*\*\*\*\*
+```
 Location
-```West US```
+```
+West US
+```
