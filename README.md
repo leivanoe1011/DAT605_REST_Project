@@ -78,8 +78,22 @@ mysql> quit
 Bye
 ```
 
-<a name="12Oct">12 Oct, 2016</a>
+<a name="12Oct">*12 Oct, 2016*</a>
 
 Configure (Free) account in Microsoft Azure Cloud Services
 
-Login and Select Portal:
+* Login and Select Portal
+* Add SQL database
+* Database name
+```Todo_SQL```
+* Create a new server
+
+Server name
+```4-cast```
+Server admin login
+```bobjones```
+
+Password  (see lab 1)
+``` \*\*\*\*\*\*\* ```
+Location
+```West US```
