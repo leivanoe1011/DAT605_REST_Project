@@ -1,7 +1,12 @@
 # DAT605_REST_Project
 
 ### Updates
-*05 Oct 2016*
+* [O5 Oct](#05Oct) TodoMVC file structure
+* [06 Oct](#06Oct) Google Cloud
+* [12 Oct](#12Oct) Microsoft Azure Configuration
+
+---
+<a name="05Oct">*05 Oct 2016*</a>
 * The [Application Spec](https://github.com/tastejs/todomvc/blob/master/app-spec.md) for the [todoMVC](todomvc.com) application includes a required directory structure:
 ```
 index.html
@@ -26,7 +31,7 @@ $ npm install --save todomvc-app-css
 * for data persistence, use RESTful API to send JSON for database queries
 
 ---
-*06 Oct 2016*
+<a name="06Oct">*06 Oct 2016*</a>
 * Setup Google Cloud Database Instance:
 
 ![SQL Database Instance](images/SQL\ Cloud\ Database.jpg?raw=true "Google DB")
@@ -72,3 +77,9 @@ mysql> SELECT * from mytodos;
 mysql> quit
 Bye
 ```
+
+<a name="12Oct">12 Oct, 2016</a>
+
+Configure (Free) account in Microsoft Azure Cloud Services
+
+Login and Select Portal:
