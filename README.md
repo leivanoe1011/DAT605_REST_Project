@@ -80,7 +80,7 @@ Bye
 
 <a name="12Oct">*12 Oct, 2016*</a>
 * Created simple group icon for use in presentation(s)
-<a href="images/4Cast.jpg">4Cast</a>
+![4cast_graphic](images/4Cast.jpg)
 
 * Configure (Free) account in Microsoft Azure Cloud Services
 * Login and Select Portal and Add SQL database
@@ -92,6 +92,7 @@ Bye
 | Resource group     | 4cast                  |
 | Select source      | Blank database         |
 | Server: >>         |                        |
+| Pricing Tier       | S1 Standard            |
 *Configure New Server*
 
 | Parameter          | Setting                      |
@@ -100,5 +101,6 @@ Bye
 | Server admin login | bobjones                     |
 | Password           | (lab 1 password +'!' =8 char)|
 | Location           | West US                      |
+
 *Check "All services to access..." and press "Select"*
 * Create
