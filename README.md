@@ -93,6 +93,7 @@ Bye
 | Select source      | Blank database         |
 | Server: >>         |                        |
 *Configure New Server*
+
 | Parameter          | Setting                      |
 |--------------------|------------------------------|
 | Server name        | 4cast(.database.windows.net) |
