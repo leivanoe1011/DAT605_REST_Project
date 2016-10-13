@@ -79,31 +79,24 @@ Bye
 ```
 
 <a name="12Oct">*12 Oct, 2016*</a>
+* Created simple group icon for use in presentation(s)
+<a href="images/4Cast.jpg">4Cast</a>
 
-Configure (Free) account in Microsoft Azure Cloud Services
+* Configure (Free) account in Microsoft Azure Cloud Services
+* Login and Select Portal and Add SQL database
 
-* Login and Select Portal
-* Add SQL database
-* Database name
-```
-Todo_SQL
-```
-* Create a new server
-
-Server name
-```
-4-cast
-```
-Server admin login
-```
-bobjones
-```
-
-Password  (see lab 1)
-```
-\*\*\*\*\*\*\*
-```
-Location
-```
-West US
-```
+| Parameter          | Setting                |
+|--------------------|:----------------------:|
+| Database name      | Todo_SQL               |
+| Subscription       | Free Trial             |
+| Resource group     | 4cast                  |
+| Select source      | Blank database         |
+| Server: >>         |                        |
+*Configure New Server*
+|--------------------|------------------------------|
+| Server name        | 4cast(.database.windows.net) |
+| Server admin login | bobjones                     |
+| Password           | (lab 1 password +'!' =8 char)|
+| Location           | West US                      |
+*Check "All services to access..." and press "Select"*
+* Create
