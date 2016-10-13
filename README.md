@@ -80,6 +80,7 @@ Bye
 
 <a name="12Oct">*12 Oct, 2016*</a>
 * Created simple group icon for use in presentation(s)
+
 ![4cast_graphic](images/4Cast.jpg)
 
 * Configure (Free) account in Microsoft Azure Cloud Services
