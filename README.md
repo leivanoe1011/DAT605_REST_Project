@@ -1,6 +1,9 @@
 # DAT605_REST_Project
 
 ![4cast_graphic](images/4Cast.jpg)
+..1. Michael Bradvica,  [mjbradvica](https://github.com/mjbradvica
+..2. Noe Hernandez, [leivanoe1011](https://github.com/leivanoe1011)
+..3. Brent Hoskins
 
 ### Updates
 * [O5 Oct](#05Oct) TodoMVC file structure
