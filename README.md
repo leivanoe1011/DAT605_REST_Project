@@ -1,7 +1,12 @@
 # DAT605_REST_Project
 
 ### Updates
-*05 Oct 2016*
+* [O5 Oct](#05Oct) TodoMVC file structure
+* [06 Oct](#06Oct) Google Cloud
+* [12 Oct](#12Oct) Microsoft Azure Configuration
+
+---
+<a name="05Oct">*05 Oct 2016*</a>
 * The [Application Spec](https://github.com/tastejs/todomvc/blob/master/app-spec.md) for the [todoMVC](todomvc.com) application includes a required directory structure:
 ```
 index.html
@@ -26,7 +31,7 @@ $ npm install --save todomvc-app-css
 * for data persistence, use RESTful API to send JSON for database queries
 
 ---
-*06 Oct 2016*
+<a name="06Oct">*06 Oct 2016*</a>
 * Setup Google Cloud Database Instance:
 
 ![SQL Database Instance](images/SQL\ Cloud\ Database.jpg?raw=true "Google DB")
@@ -72,3 +77,31 @@ mysql> SELECT * from mytodos;
 mysql> quit
 Bye
 ```
+
+<a name="12Oct">*12 Oct, 2016*</a>
+* Created simple group icon for use in presentation(s)
+
+![4cast_graphic](images/4Cast.jpg)
+
+* Configure (Free) account in Microsoft Azure Cloud Services
+* Login and Select Portal and Add SQL database
+
+| Parameter          | Setting                |
+|--------------------|:----------------------:|
+| Database name      | Todo_SQL               |
+| Subscription       | Free Trial             |
+| Resource group     | 4cast                  |
+| Select source      | Blank database         |
+| Server: >>         |                        |
+| Pricing Tier       | S1 Standard            |
+*Configure New Server*
+
+| Parameter          | Setting                      |
+|--------------------|------------------------------|
+| Server name        | 4cast(.database.windows.net) |
+| Server admin login | bobjones                     |
+| Password           | (lab 1 password +'!' =8 char)|
+| Location           | West US                      |
+
+*Check "All services to access..." and press "Select"*
+* Create
