@@ -1,5 +1,7 @@
 # DAT605_REST_Project
 
+![4cast_graphic](images/4Cast.jpg)
+
 ### Updates
 * [O5 Oct](#05Oct) TodoMVC file structure
 * [06 Oct](#06Oct) Google Cloud
@@ -79,10 +81,7 @@ Bye
 ```
 
 <a name="12Oct">*12 Oct, 2016*</a>
-* Created simple group icon for use in presentation(s)
-
-![4cast_graphic](images/4Cast.jpg)
-
+* Created simple group icon for use in presentation(s) (images/4Cast.jpg)
 * Configure (Free) account in Microsoft Azure Cloud Services
 * Login and Select Portal and Add SQL database
 
