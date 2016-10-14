@@ -26,7 +26,7 @@ namespace ToDoMVC.Infrastructure
             return new UserRepository(users);
         }
 
-        private IMapper CreateUserMapper()
+        private IMapper CreateDTOMapper()
         {
             var mapper = new MapperConfiguration(x => x.CreateMap<User, DataUser>());
             
@@ -34,18 +34,20 @@ namespace ToDoMVC.Infrastructure
             return new Mapper(mapper);
         }
 
-        private IMapper BackwardsMapper()
+        
+        private IMapper CreateUserMapper()
         {
             var otherMap = new MapperConfiguration(x => x.CreateMap<DataUser, User>());
 
             return new Mapper(otherMap);
         }
+        
 
         public IDataAdapter<DataUser> CreateUserAdapter()
         {
             var repos = CreateUserRepository();
-            var mapper = CreateUserMapper();
-            var backMapper = BackwardsMapper();
+            var mapper = CreateDTOMapper();
+            var backMapper = CreateUserMapper();
 
             return new UserDataAdapter(repos, mapper, backMapper);
         }

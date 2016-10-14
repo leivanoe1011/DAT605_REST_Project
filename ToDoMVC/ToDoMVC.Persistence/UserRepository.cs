@@ -30,6 +30,7 @@ namespace ToDoMVC.Persistence
         public void Delete(User entity)
         {
             _dbSet.Remove(entity);
+            Save();
         }
 
         public IQueryable<User> SearchFor(Expression<Func<User, bool>> predicate)

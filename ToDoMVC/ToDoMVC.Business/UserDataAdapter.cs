@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using ToDoMVC.Contracts;
 using ToDoMVC.Domain;
 using ToDoMVC.Persistence;
@@ -16,26 +17,28 @@ namespace ToDoMVC.Business
     public class UserDataAdapter : IDataAdapter<DataUser>
     {
         private readonly IRepository<User> _repository;
-        private readonly IMapper _mapper;
-        private readonly IMapper _backMapper;
+        private readonly IMapper _objectToDtoMapper;
+        private readonly IMapper _dtoToObjectMapper;
 
-        public UserDataAdapter(IRepository<User> repository, IMapper mapper, IMapper backMapper)
+        public UserDataAdapter(IRepository<User> repository, IMapper objectToDtoMapper, IMapper dtoToObjectMapper)
         {
             _repository = repository;
-            _mapper = mapper;
-            _backMapper = backMapper;
+            _objectToDtoMapper = objectToDtoMapper;
+            _dtoToObjectMapper = dtoToObjectMapper;
         }
 
         public void Insert(DataUser entity)
         {
-            _repository.Insert(_backMapper.Map<DataUser, User>(entity));
-            //var userMapper = new UserDataMapper();
-            //_repository.Insert(userMapper.MapToObject(entity));
+            _repository.Insert(_dtoToObjectMapper.Map<DataUser, User>(entity));
         }
 
         public void Delete(DataUser entity)
         {
-            throw new NotImplementedException();
+            var allUsers = _repository.GetAll().ToList();
+            
+            var userToDelete = allUsers.FirstOrDefault(x => x.Name.Equals(entity.Name));
+
+            _repository.Delete(userToDelete);
         }
 
         public IEnumerable<DataUser> SearchFor()
@@ -50,7 +53,7 @@ namespace ToDoMVC.Business
 
             foreach (var i in allUsers)
             {
-                dataUsers.Add(_mapper.Map<User, DataUser>(i));
+                dataUsers.Add(_objectToDtoMapper.Map<User, DataUser>(i));
             }
 
             return dataUsers;

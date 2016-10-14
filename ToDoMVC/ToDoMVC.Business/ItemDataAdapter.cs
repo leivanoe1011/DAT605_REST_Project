@@ -13,17 +13,23 @@ namespace ToDoMVC.Business
     public class ItemDataAdapter : IDataAdapter<DataItem>
     {
         private readonly IRepository<Item> _repository;
-        private readonly IMapper _mapper;
+        private readonly IMapper _objectToDtoMapper;
+        private readonly IMapper _dtoToObjectMapper;
 
-        public ItemDataAdapter (IRepository<Item> repository, IMapper mapper)
+        public ItemDataAdapter (IRepository<Item> repository, IMapper objectToDtoMapper, IMapper dtoToObjectMapper)
         {
             _repository = repository;
-            _mapper = mapper;
+            _objectToDtoMapper = objectToDtoMapper;
+            _dtoToObjectMapper = dtoToObjectMapper;
         }
 
         public void Delete(DataItem entity)
         {
-            throw new NotImplementedException();
+            var allItems = _repository.GetAll().ToList();
+
+            var itemToDelete = allItems.FirstOrDefault(x => x.Name.Equals(entity.Name));
+
+            _repository.Delete(itemToDelete);
         }
 
         public IEnumerable<DataItem> GetAll()
@@ -33,7 +39,7 @@ namespace ToDoMVC.Business
 
             foreach (var i in allItems)
             {
-                dataObjects.Add(_mapper.Map<Item, DataItem>(i));
+                dataObjects.Add(_objectToDtoMapper.Map<Item, DataItem>(i));
             }
 
             return dataObjects;
@@ -46,7 +52,7 @@ namespace ToDoMVC.Business
 
         public void Insert(DataItem entity)
         {
-            throw new NotImplementedException();
+            _repository.Insert(_dtoToObjectMapper.Map<DataItem, Item>(entity));
         }
 
         public IEnumerable<DataItem> SearchFor()

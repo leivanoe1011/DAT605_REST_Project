@@ -53,9 +53,15 @@ namespace ToDoMVC.Service.Controllers
             return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
 
-        public void Delete(DataUser user)
+        public HttpResponseMessage Delete(string name)
         {
-            _userDataAdapter.Delete(user);
+            var userToDelete = new DataUser()
+            {
+                Name = name
+            };
+
+            _userDataAdapter.Delete(userToDelete);
+            return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
     }
 }

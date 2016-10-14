@@ -16,9 +16,9 @@ namespace ToDoMVC.Infrastructure
 {
     public class ItemFactory
     {
-        private DbSet<Item> CreateItemDbSet()
+        private ToDoMVCEntities CreateItemDbSet()
         {
-            return new ToDoMVCEntities().Items;
+            return new ToDoMVCEntities();
         }
 
         private IRepository<Item> CreateItemRepository()
@@ -28,19 +28,28 @@ namespace ToDoMVC.Infrastructure
             return new ItemRepository(items);
         }
 
-        private IMapper CreateItemMapper()
+        private IMapper CreateDTOMapper()
         {
             var mapper = new MapperConfiguration(x => x.CreateMap<Item, DataItem>());
 
             return new Mapper(mapper);
         }
 
+        private IMapper CreateItemMapper()
+        {
+            var othermap = new MapperConfiguration(x => x.CreateMap<DataItem, Item>());
+
+            return new Mapper(othermap);
+        }
+            
+
         public IDataAdapter<DataItem> CreateItemAdapter()
         {
             var repos = CreateItemRepository();
-            var mapper = CreateItemMapper();
+            var mapper = CreateDTOMapper();
+            var backMapper = CreateItemMapper();
 
-            return new ItemDataAdapter(repos, mapper);
+            return new ItemDataAdapter(repos, mapper, backMapper);
         }
     }
 }
