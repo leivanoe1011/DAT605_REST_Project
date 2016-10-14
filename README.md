@@ -8,7 +8,7 @@
 | Brent Hoskins    | [brenthoskins84](https://github.com/brenthoskins84) |
 | Dan Sullivan     | [uid100](https://github.com/uid100) |
 
-### TOC
+### Updates <a name="TOC"></a>
 * [O5 Oct](#05Oct) TodoMVC file structure
 * [06 Oct](#06Oct) Google Cloud
 * [12 Oct](#12Oct) Microsoft Azure Configuration
