@@ -1,4 +1,5 @@
-# DAT605_REST_Project  TODO
+# DAT605_REST_Project
+
 ![4cast_graphic](images/4Cast.jpg)
 
 | Team: 4Cast      | Github ID        |
@@ -22,7 +23,7 @@
 * Finish migrating code from XML to JSON
 * Update architecture diagrams
 
- [back to top](#updates)
+ [back to TOC](#updates)
 
 ---
 <a name="12Oct">*12 Oct, 2016*</a>
@@ -51,7 +52,7 @@
 
 * Press Create
 
- [back to top](#updates)
+ [back to TOC](#updates)
 
 ---
 
@@ -101,7 +102,7 @@ mysql> SELECT * from mytodos;
 mysql> quit
 Bye
 ```
- [back to top](#updates)
+ [back to TOC](#updates)
  
 ---
 
@@ -129,4 +130,4 @@ $ npm install --save todomvc-app-css
 ```
 * for data persistence, use RESTful API to send JSON for database queries
 ---
- [back to top](#updates)
+ [back to TOC](#updates)
