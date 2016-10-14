@@ -14,9 +14,9 @@ namespace ToDoMVC.Infrastructure
 {
     public class ToDoFactory
     {
-        private DbSet<ToDo> CreateToDoDbSet()
+        private ToDoMVCEntities CreateToDoDbSet()
         {
-            return new ToDoMVCEntities().ToDoes;
+            return new ToDoMVCEntities();
         }
 
         private IRepository<ToDo> CreateToDoRepository()
@@ -26,9 +26,16 @@ namespace ToDoMVC.Infrastructure
             return new ToDoRepository(todos);
         }
 
-        private IMapper CreateToDoMapper()
+        private IMapper CreateDTOMapper()
         {
             var mapper = new MapperConfiguration(x => x.CreateMap<ToDo, DataToDo>());
+
+            return new Mapper(mapper);
+        }
+
+        private IMapper CreateToDoMapper()
+        {
+            var mapper = new MapperConfiguration(x => x.CreateMap<DataToDo, ToDo>());
 
             return new Mapper(mapper);
         }
@@ -36,9 +43,10 @@ namespace ToDoMVC.Infrastructure
         public IDataAdapter<DataToDo> CreateToDoAdapter()
         {
             var repos = CreateToDoRepository();
-            var mapper = CreateToDoMapper();
+            var mapper = CreateDTOMapper();
+            var backMapper = CreateToDoMapper();
 
-            return new ToDoDataAdapter(repos, mapper);
+            return new ToDoDataAdapter(repos, mapper, backMapper);
         }
     }
 }

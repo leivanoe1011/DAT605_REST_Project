@@ -36,14 +36,28 @@ namespace ToDoMVC.Service.Controllers
             return _todoDataAdapter.GetById(id);
         }
 
-        public void Post(DataToDo todo)
+        [HttpPost]
+        public HttpResponseMessage Post(string name, string user)
         {
-            _todoDataAdapter.Insert(todo);
+            var newToDo = new DataToDo()
+            {
+                Name = name,
+                UserName = user
+            };
+
+            _todoDataAdapter.Insert(newToDo);
+            return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
 
-        public void Delete(DataToDo todo)
+        public HttpResponseMessage Delete(string name)
         {
-            _todoDataAdapter.Delete(todo);
+            var todoToDelete = new DataToDo()
+            {
+                Name = name
+            };
+
+            _todoDataAdapter.Delete(todoToDelete);
+            return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
     }
 }
