@@ -52,6 +52,7 @@
 * Press Create
 
  [back to top](#updates)
+
 ---
 
 <a name="06Oct">*06 Oct 2016*</a>
@@ -101,6 +102,7 @@ mysql> quit
 Bye
 ```
  [back to top](#updates)
+ 
 ---
 
 <a name="05Oct">*05 Oct 2016*</a>
