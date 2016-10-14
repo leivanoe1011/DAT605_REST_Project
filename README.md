@@ -86,7 +86,7 @@ mysql> SELECT * from mytodos;
 mysql> quit
 Bye
 ```
-
+---
 <a name="12Oct">*12 Oct, 2016*</a>
 * Created simple group icon for use in presentation(s) (images/4Cast.jpg)
 * Configure (Free) account in Microsoft Azure Cloud Services
@@ -110,4 +110,6 @@ Bye
 | Location           | West US                      |
 
 *Check "All services to access..." and press "Select"*
-* Create
+* Press Create
+---
+<a name="13Oct">*13 Oct, 2016*</a>
