@@ -8,7 +8,7 @@
 | Brent Hoskins    | [brenthoskins84](https://github.com/brenthoskins84) |
 | Dan Sullivan     | [uid100](https://github.com/uid100) |
 
-(#TOC)
+### TOC
 * [O5 Oct](#05Oct) TodoMVC file structure
 * [06 Oct](#06Oct) Google Cloud
 * [12 Oct](#12Oct) Microsoft Azure Configuration
@@ -22,7 +22,7 @@
 * Finish migrating code from XML to JSON
 * Update architecture diagrams
 
-[TOC](#TOC)
+ back to (#toc)
 
 ---
 <a name="12Oct">*12 Oct, 2016*</a>
@@ -50,6 +50,8 @@
 *Check "All services to access..." and press "Select"*
 
 * Press Create
+
+ back to (#toc)
 ---
 
 <a name="06Oct">*06 Oct 2016*</a>
