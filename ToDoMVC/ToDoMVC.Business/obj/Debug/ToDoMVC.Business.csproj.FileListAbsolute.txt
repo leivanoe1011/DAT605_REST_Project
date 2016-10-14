@@ -24,3 +24,5 @@ C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Busines
 C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\obj\Debug\ToDoMVC.Business.csprojResolveAssemblyReference.cache
 C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\obj\Debug\ToDoMVC.Business.dll
 C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\obj\Debug\ToDoMVC.Business.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Debug\AutoMapper.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Debug\AutoMapper.xml

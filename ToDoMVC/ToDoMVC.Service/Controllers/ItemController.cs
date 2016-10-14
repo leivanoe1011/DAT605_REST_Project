@@ -15,7 +15,6 @@ namespace ToDoMVC.Service.Controllers
     public class ItemController : ApiController
     {
         private readonly IDataAdapter<DataItem> _itemDataAdapter;
-
         private readonly ItemFactory _factory;
 
         public ItemController(IDataAdapter<DataItem> itemDataAdapter)
@@ -39,14 +38,29 @@ namespace ToDoMVC.Service.Controllers
             return _itemDataAdapter.GetById(id);
         }
 
-        public void Post(DataItem item)
+        [HttpPost]
+        public HttpResponseMessage Post(string name, string todo)
         {
-            _itemDataAdapter.Insert(item);
+            var newItem = new DataItem()
+            {
+                Name = name,
+                ToDoName = todo
+            };
+
+            _itemDataAdapter.Insert(newItem);
+            return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
 
-        public void Delete(DataItem item)
+        public HttpResponseMessage Delete(string name)
         {
-            _itemDataAdapter.Delete(item);
+            var itemToDelete = new DataItem()
+            {
+                Name = name
+            };
+
+
+            _itemDataAdapter.Delete(itemToDelete);
+            return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
     }
 }

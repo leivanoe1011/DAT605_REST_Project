@@ -6,12 +6,14 @@ using System.Net.Http;
 using System.Web.Http;
 using ToDoMVC.Contracts;
 using ToDoMVC.Domain;
+using ToDoMVC.Infrastructure;
 
 namespace ToDoMVC.Service.Controllers
 {
     public class ToDoController : ApiController
     {
-        private IDataAdapter<DataToDo> _todoDataAdapter;
+        private readonly IDataAdapter<DataToDo> _todoDataAdapter;
+        private readonly ToDoFactory _factory;
 
         public ToDoController(IDataAdapter<DataToDo> todoDataAdapter)
         {
@@ -20,7 +22,8 @@ namespace ToDoMVC.Service.Controllers
 
         public ToDoController()
         {
-            //defautl for testing only
+            _factory = new ToDoFactory();
+            _todoDataAdapter = _factory.CreateToDoAdapter();
         }
 
         public IEnumerable<DataToDo> Get()

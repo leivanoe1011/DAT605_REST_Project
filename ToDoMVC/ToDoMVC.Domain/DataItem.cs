@@ -10,6 +10,6 @@ namespace ToDoMVC.Domain
     {
         public string Name { get; set; }
         public string ToDoName { get; set; }
-        public virtual DataToDo ToDo { get; set; }
+        //public virtual DataToDo ToDo { get; set; }
     }
 }

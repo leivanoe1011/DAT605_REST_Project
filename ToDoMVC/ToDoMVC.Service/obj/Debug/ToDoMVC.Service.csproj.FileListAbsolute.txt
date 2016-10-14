@@ -106,3 +106,5 @@ C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service
 C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\obj\Debug\ToDoMVC.Service.pdb
 D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Infrastructure.dll
 D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\ToDoMVC.Infrastructure.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\AutoMapper.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Service\bin\AutoMapper.xml
