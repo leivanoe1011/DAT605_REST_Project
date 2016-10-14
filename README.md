@@ -1,5 +1,4 @@
-# DAT605_REST_Project
-
+# DAT605_REST_Project  TODO
 ![4cast_graphic](images/4Cast.jpg)
 
 | Team: 4Cast      | Github ID        |
@@ -13,6 +12,8 @@
 * [O5 Oct](#05Oct) TodoMVC file structure
 * [06 Oct](#06Oct) Google Cloud
 * [12 Oct](#12Oct) Microsoft Azure Configuration
+* [13 Oct](#13Oct) Documentation Updates
+
 ---
 <a name="13Oct">*13 Oct, 2016*</a>
 * Reordered Notes from most recent.
@@ -20,6 +21,9 @@
 * Need to review / update code comments
 * Finish migrating code from XML to JSON
 * Update architecture diagrams
+
+[TOC](#Updates)
+
 ---
 <a name="12Oct">*12 Oct, 2016*</a>
 * Created simple group icon for use in presentation(s) (images/4Cast.jpg)
@@ -44,8 +48,10 @@
 | Location           | West US                      |
 
 *Check "All services to access..." and press "Select"*
+
 * Press Create
 ---
+
 <a name="06Oct">*06 Oct 2016*</a>
 * Setup Google Cloud Database Instance:
 
@@ -93,6 +99,7 @@ mysql> quit
 Bye
 ```
 ---
+
 <a name="05Oct">*05 Oct 2016*</a>
 * The [Application Spec](https://github.com/tastejs/todomvc/blob/master/app-spec.md) for the [todoMVC](todomvc.com) application includes a required directory structure:
 ```
