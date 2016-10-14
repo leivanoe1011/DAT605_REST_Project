@@ -8,7 +8,7 @@
 | Brent Hoskins    | [brenthoskins84](https://github.com/brenthoskins84) |
 | Dan Sullivan     | [uid100](https://github.com/uid100) |
 
-### Updates <a name="TOC"></a>
+### Updates ###
 * [O5 Oct](#05Oct) TodoMVC file structure
 * [06 Oct](#06Oct) Google Cloud
 * [12 Oct](#12Oct) Microsoft Azure Configuration
@@ -22,7 +22,7 @@
 * Finish migrating code from XML to JSON
 * Update architecture diagrams
 
- [back to top](#toc)
+ [back to top](#updates)
 
 ---
 <a name="12Oct">*12 Oct, 2016*</a>
@@ -51,7 +51,7 @@
 
 * Press Create
 
- [back to top](#toc)
+ [back to top](#updates)
 ---
 
 <a name="06Oct">*06 Oct 2016*</a>
@@ -100,7 +100,7 @@ mysql> SELECT * from mytodos;
 mysql> quit
 Bye
 ```
- [back to top](#toc)
+ [back to top](#updates)
 ---
 
 <a name="05Oct">*05 Oct 2016*</a>
@@ -127,4 +127,4 @@ $ npm install --save todomvc-app-css
 ```
 * for data persistence, use RESTful API to send JSON for database queries
 ---
- [back to top](#toc)
+ [back to top](#updates)
