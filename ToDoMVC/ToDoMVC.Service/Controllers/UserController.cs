@@ -13,6 +13,16 @@ using ToDoMVC.Infrastructure;
 
 namespace ToDoMVC.Service.Controllers
 {
+
+    /// <summary>
+    /// Reponsibility:
+    /// Web API controllers for Users.
+    /// 
+    /// Interactions:
+    /// ToDoMVC.Business Adapters
+    /// ToDoMVC.Infrastructure Factories
+    /// </summary>
+
     public class UserController : ApiController
     {
         private readonly IDataAdapter<DataUser> _userDataAdapter;
@@ -29,18 +39,32 @@ namespace ToDoMVC.Service.Controllers
             _userDataAdapter = _factory.CreateUserAdapter();
         }
 
+        /// <summary>
+        /// Return all DataUsers from repository.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IEnumerable<DataUser> Get()
         {
             return _userDataAdapter.GetAll();
         }
 
+        /// <summary>
+        /// Return single DataUser via identification number.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
         public DataUser Get(int id)
         {
             return _userDataAdapter.GetById(id);
         }
 
+        /// <summary>
+        /// Create new DataUser via string param, add to database via business adapter.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         [HttpPost]
         public HttpResponseMessage Post(string name)
         {
@@ -53,6 +77,11 @@ namespace ToDoMVC.Service.Controllers
             return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
 
+        /// <summary>
+        /// Create new DataUser via string param, delete from database via business adapter.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public HttpResponseMessage Delete(string name)
         {
             var userToDelete = new DataUser()

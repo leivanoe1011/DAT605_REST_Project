@@ -5,8 +5,23 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace ToDoMVC.Contracts
 {
+
+    /// <summary>
+    /// Responsibilities: 
+    /// Interface for CRUD operation for repository classes.
+    /// 
+    /// Implemented By:
+    /// Persistence Repositories
+    /// 
+    /// Used By:
+    /// Business Adapters
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+
     public interface IRepository<T>
     {
         void Insert(T entity);
