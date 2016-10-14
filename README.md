@@ -22,7 +22,7 @@
 * Finish migrating code from XML to JSON
 * Update architecture diagrams
 
- back to (#toc)
+ [back to top](#toc)
 
 ---
 <a name="12Oct">*12 Oct, 2016*</a>
@@ -51,7 +51,7 @@
 
 * Press Create
 
- back to (#toc)
+ [back to top](#toc)
 ---
 
 <a name="06Oct">*06 Oct 2016*</a>
@@ -100,6 +100,7 @@ mysql> SELECT * from mytodos;
 mysql> quit
 Bye
 ```
+ [back to top](#toc)
 ---
 
 <a name="05Oct">*05 Oct 2016*</a>
@@ -126,3 +127,4 @@ $ npm install --save todomvc-app-css
 ```
 * for data persistence, use RESTful API to send JSON for database queries
 ---
+ [back to top](#toc)
