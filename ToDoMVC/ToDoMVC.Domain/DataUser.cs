@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace ToDoMVC.Domain
 {
+
+    /// <summary>
+    /// Responsibilities:
+    /// DTO for DBSet User object.
+    /// </summary>
+
     public class DataUser
     {
         public string Name { get; set; }
-        public IList<DataToDo> ToDo { get; set; }
     }
 }

@@ -9,6 +9,6 @@ namespace ToDoMVC.Domain
     public class DataToDo
     {
         public string Name { get; set; }
-        public IList<DataItem> Items { get; set; }
+        public string UserName { get; set; }
     }
 }

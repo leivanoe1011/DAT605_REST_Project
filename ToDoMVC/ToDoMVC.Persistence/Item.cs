@@ -16,7 +16,6 @@ namespace ToDoMVC.Persistence
     {
         public string Name { get; set; }
         public string ToDoName { get; set; }
-    
         public virtual ToDo ToDo { get; set; }
     }
 }

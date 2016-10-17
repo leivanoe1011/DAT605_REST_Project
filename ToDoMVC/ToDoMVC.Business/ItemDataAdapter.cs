@@ -6,30 +6,43 @@ using System.Threading.Tasks;
 using ToDoMVC.Contracts;
 using ToDoMVC.Domain;
 using ToDoMVC.Persistence;
+using AutoMapper;
 
 namespace ToDoMVC.Business
 {
     public class ItemDataAdapter : IDataAdapter<DataItem>
     {
         private readonly IRepository<Item> _repository;
-        private readonly IDataMapper<DataItem, Item> _dataMapper;
+        private readonly IMapper _objectToDtoMapper;
+        private readonly IMapper _dtoToObjectMapper;
 
-        public ItemDataAdapter (IRepository<Item> repository, IDataMapper<DataItem, Item> dataMapper)
+        public ItemDataAdapter (IRepository<Item> repository, IMapper objectToDtoMapper, IMapper dtoToObjectMapper)
         {
             _repository = repository;
-            _dataMapper = dataMapper;
+            _objectToDtoMapper = objectToDtoMapper;
+            _dtoToObjectMapper = dtoToObjectMapper;
         }
 
         public void Delete(DataItem entity)
         {
-            throw new NotImplementedException();
+            var allItems = _repository.GetAll().ToList();
+
+            var itemToDelete = allItems.FirstOrDefault(x => x.Name.Equals(entity.Name));
+
+            _repository.Delete(itemToDelete);
         }
 
         public IEnumerable<DataItem> GetAll()
         {
             var allItems = _repository.GetAll();
+            var dataObjects = new List<DataItem>();
 
-            return _dataMapper.MapToDto(allItems);
+            foreach (var i in allItems)
+            {
+                dataObjects.Add(_objectToDtoMapper.Map<Item, DataItem>(i));
+            }
+
+            return dataObjects;
         }
 
         public DataItem GetById(int id)
@@ -39,7 +52,7 @@ namespace ToDoMVC.Business
 
         public void Insert(DataItem entity)
         {
-            throw new NotImplementedException();
+            _repository.Insert(_dtoToObjectMapper.Map<DataItem, Item>(entity));
         }
 
         public IEnumerable<DataItem> SearchFor()

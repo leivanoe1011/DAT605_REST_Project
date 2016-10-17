@@ -13,34 +13,84 @@ using ToDoMVC.Infrastructure;
 
 namespace ToDoMVC.Service.Controllers
 {
+
+    /// <summary>
+    /// Reponsibility:
+    /// Web API controllers for Users.
+    /// 
+    /// Interactions:
+    /// ToDoMVC.Business Adapters
+    /// ToDoMVC.Infrastructure Factories
+    /// </summary>
+
     public class UserController : ApiController
     {
-        private IDataAdapter<DataUser> _userDataAdapter;
+        private readonly IDataAdapter<DataUser> _userDataAdapter;
+        private readonly UserFactory _factory;
 
-        public UserController()//IDataAdapter<UserDto> userDataAdapter)
+        public UserController(IDataAdapter<DataUser> userDataAdapter)
         {
-            var factory = new UserFactory();
-            _userDataAdapter = factory.CreateUserAdapter();
+            _userDataAdapter = userDataAdapter;
         }
 
+        public UserController()
+        {
+            _factory = new UserFactory();
+            _userDataAdapter = _factory.CreateUserAdapter();
+        }
+
+        /// <summary>
+        /// Return all DataUsers from repository.
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
         public IEnumerable<DataUser> Get()
         {
             return _userDataAdapter.GetAll();
         }
 
+        /// <summary>
+        /// Return single DataUser via identification number.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet]
         public DataUser Get(int id)
         {
             return _userDataAdapter.GetById(id);
         }
 
-        public void Post(DataUser user)
+        /// <summary>
+        /// Create new DataUser via string param, add to database via business adapter.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public HttpResponseMessage Post(string name)
         {
-            _userDataAdapter.Insert(user);
+            var newUser = new DataUser()
+            {
+                Name = name
+            }; 
+
+            _userDataAdapter.Insert(newUser);
+            return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
 
-        public void Delete(DataUser user)
+        /// <summary>
+        /// Create new DataUser via string param, delete from database via business adapter.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public HttpResponseMessage Delete(string name)
         {
-            _userDataAdapter.Delete(user);
+            var userToDelete = new DataUser()
+            {
+                Name = name
+            };
+
+            _userDataAdapter.Delete(userToDelete);
+            return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
     }
 }

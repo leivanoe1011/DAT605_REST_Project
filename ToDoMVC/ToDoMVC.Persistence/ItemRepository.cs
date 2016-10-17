@@ -12,15 +12,18 @@ namespace ToDoMVC.Persistence
     public class ItemRepository : IRepository<Item>
     {
         private readonly DbSet<Item> _dbSet;
+        private readonly ToDoMVCEntities _entites;
 
-        public ItemRepository(DbSet<Item> datacontext)
+        public ItemRepository(ToDoMVCEntities entities)
         {
-            _dbSet = datacontext;
+            _entites = entities;
+            _dbSet = _entites.Items;
         }
 
         public void Delete(Item entity)
         {
             _dbSet.Remove(entity);
+            Save();
         }
 
         public IQueryable<Item> GetAll()
@@ -36,11 +39,17 @@ namespace ToDoMVC.Persistence
         public void Insert(Item entity)
         {
             _dbSet.Add(entity);
+            Save();
         }
 
         public IQueryable<Item> SearchFor(Expression<Func<Item, bool>> predicate)
         {
             return _dbSet.Where(predicate);
+        }
+
+        public void Save()
+        {
+            _entites.SaveChanges();
         }
     }
 }

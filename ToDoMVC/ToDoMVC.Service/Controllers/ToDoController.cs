@@ -6,12 +6,14 @@ using System.Net.Http;
 using System.Web.Http;
 using ToDoMVC.Contracts;
 using ToDoMVC.Domain;
+using ToDoMVC.Infrastructure;
 
 namespace ToDoMVC.Service.Controllers
 {
     public class ToDoController : ApiController
     {
-        private IDataAdapter<DataToDo> _todoDataAdapter;
+        private readonly IDataAdapter<DataToDo> _todoDataAdapter;
+        private readonly ToDoFactory _factory;
 
         public ToDoController(IDataAdapter<DataToDo> todoDataAdapter)
         {
@@ -20,7 +22,8 @@ namespace ToDoMVC.Service.Controllers
 
         public ToDoController()
         {
-            //defautl for testing only
+            _factory = new ToDoFactory();
+            _todoDataAdapter = _factory.CreateToDoAdapter();
         }
 
         public IEnumerable<DataToDo> Get()
@@ -33,14 +36,28 @@ namespace ToDoMVC.Service.Controllers
             return _todoDataAdapter.GetById(id);
         }
 
-        public void Post(DataToDo todo)
+        [HttpPost]
+        public HttpResponseMessage Post(string name, string user)
         {
-            _todoDataAdapter.Insert(todo);
+            var newToDo = new DataToDo()
+            {
+                Name = name,
+                UserName = user
+            };
+
+            _todoDataAdapter.Insert(newToDo);
+            return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
 
-        public void Delete(DataToDo todo)
+        public HttpResponseMessage Delete(string name)
         {
-            _todoDataAdapter.Delete(todo);
+            var todoToDelete = new DataToDo()
+            {
+                Name = name
+            };
+
+            _todoDataAdapter.Delete(todoToDelete);
+            return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
     }
 }

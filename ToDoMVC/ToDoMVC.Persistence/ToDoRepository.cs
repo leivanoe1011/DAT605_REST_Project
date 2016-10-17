@@ -9,38 +9,47 @@ using ToDoMVC.Contracts;
 
 namespace ToDoMVC.Persistence
 {
-    class ToDoRepository : IRepository<ToDo>
+    public class ToDoRepository : IRepository<ToDo>
     {
         private readonly DbSet<ToDo> _dbSet;
+        private readonly ToDoMVCEntities _entities;
 
-        public ToDoRepository(DbSet<ToDo> datacontext)
+        public ToDoRepository(ToDoMVCEntities entities)
         {
-            _dbSet = datacontext;
+            _entities = entities;
+            _dbSet = _entities.ToDoes;
         }
 
         public void Delete(ToDo entity)
         {
-            throw new NotImplementedException();
+            _dbSet.Remove(entity);
+            Save();
         }
 
         public IQueryable<ToDo> GetAll()
         {
-            throw new NotImplementedException();
+            return _dbSet;
         }
 
         public ToDo GetById(int id)
         {
-            throw new NotImplementedException();
+            return _dbSet.Find(id);
         }
 
         public void Insert(ToDo entity)
         {
-            throw new NotImplementedException();
+            _dbSet.Add(entity);
+            Save();
         }
 
         public IQueryable<ToDo> SearchFor(Expression<Func<ToDo, bool>> predicate)
         {
-            throw new NotImplementedException();
+            return _dbSet.Where(predicate);
+        }
+
+        public void Save()
+        {
+            _entities.SaveChanges();
         }
     }
 }
