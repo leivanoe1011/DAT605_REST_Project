@@ -9,6 +9,12 @@
 
 namespace ToDoMVC.Persistence
 {
+    /// Responsibilities:
+    /// TODO Data Object
+    /// responsible to get and set Database values.
+    /// Here the User and the TODO value will be linked
+    /// and accessed.
+    
     using System;
     using System.Collections.Generic;
     
