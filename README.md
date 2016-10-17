@@ -16,6 +16,23 @@
 * [13 Oct](#13Oct) Documentation Updates
 * [15 Oct](#15Oct) Chat notes
 * [16 Oct](#16Oct) Presentation upload 'Pull Request
+* [17 Oct](#17Oct) SQL Connection
+
+---
+<a name="17Oct">*17 Oct, 2016*</a>
+* Create (Azure) SQL Tables
+
+
+
+|-----------------|----------------------------|
+| Server Name:    | 4cast.database.windows.net |
+| Database:       | Todo_SQL                   |
+| Authentication  | |
+| Method:         | Username/Password          |
+| User Name:      | bobjones                   |
+| Password:       | ********                   |
+*IP address needs to be added to firewall rules*
+
 
 ---
 <a name="16Oct">*16 Oct, 2016*</a>
