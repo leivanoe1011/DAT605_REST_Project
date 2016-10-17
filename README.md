@@ -33,6 +33,38 @@
 | Password:        | ********                   |
 *IP address needs to be added to firewall rules*
 
+The Azure SQL Database can be managed using SQL Server Management Studio (SSMS). This is only available on WINDOWS platforms, and it is a large download.  Alternatively, use the Query capability with MS Excel over an ODBC connection.
+
+```
+IF OBJECT_ID('tblTodo', 'U') IS NOT NULL
+   DROP TABLE  tblTodo;
+
+CREATE TABLE tblTodo(
+   ID int NOT NULL,
+   Descr  varchar(128) NOT NULL,
+   IsDone  bit NOT NULL DEFAULT (0),
+   ToDoListId   int,
+   PRIMARY KEY (Id)
+);
+
+IF OBJECT_ID('tblTodoList', 'U') IS NOT NULL
+   DROP TABLE  tblTodoList;
+
+CREATE TABLE tblTodoList(
+   Username  varchar(32),
+   ListId   int
+);
+
+IF OBJECT_ID('tblUser', 'U') IS NOT NULL
+   DROP TABLE  tblUser;
+
+CREATE TABLE tblUser(
+   Username  varchar(32),
+   Password  varchar(32)
+);
+```
+
+*tables* (images/ShowTables.jpg)
 
 ---
 <a name="16Oct">*16 Oct, 2016*</a>
