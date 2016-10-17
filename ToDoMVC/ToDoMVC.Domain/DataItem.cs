@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace ToDoMVC.Domain
 {
+
+    /// Responsibilities:
+    /// Data Object responsible to get and set Database values.
+    
     public class DataItem
     {
         public string Name { get; set; }
