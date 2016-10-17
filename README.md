@@ -64,7 +64,7 @@ CREATE TABLE tblUser(
 );
 ```
 
-![tables](images/ShowTables.jpg =240x)
+![tables](images/ShowTables.jpg)
 
 ---
 <a name="16Oct">*16 Oct, 2016*</a>
