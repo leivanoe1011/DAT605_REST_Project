@@ -14,6 +14,18 @@
 * [06 Oct](#06Oct) Google Cloud
 * [12 Oct](#12Oct) Microsoft Azure Configuration
 * [13 Oct](#13Oct) Documentation Updates
+* [15 Oct](#15Oct) Chat notes
+* [16 Oct](#16Oct) Presentation upload 'Pull Request
+
+---
+<a name="16Oct">*16 Oct, 2016*</a>
+* uploaded draft presentation
+
+---
+<a name="15Oct">*15 Oct, 2016*</a>
+* status: port issues running locally
+* SQL database setup on MS Windows Azure - working out connection issues. Initial firewall settings are configured.
+* code walk-through. Adding source comments. More to add.
 
 ---
 <a name="13Oct">*13 Oct, 2016*</a>
