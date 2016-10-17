@@ -23,14 +23,14 @@
 * Create (Azure) SQL Tables
 
 
-
-|-----------------|----------------------------|
-| Server Name:    | 4cast.database.windows.net |
-| Database:       | Todo_SQL                   |
-| Authentication  | |
-| Method:         | Username/Password          |
-| User Name:      | bobjones                   |
-| Password:       | ********                   |
+| ODBC Data Source | parameters                 |
+|------------------|----------------------------|
+| Server Name:     | 4cast.database.windows.net |
+| Database:        | Todo_SQL                   |
+| Authentication   |                            |
+| Method:          | Username/Password          |
+| User Name:       | bobjones                   |
+| Password:        | ********                   |
 *IP address needs to be added to firewall rules*
 
 
