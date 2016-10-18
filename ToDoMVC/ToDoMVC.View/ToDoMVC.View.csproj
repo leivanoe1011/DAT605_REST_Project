@@ -164,7 +164,7 @@
           <DevelopmentServerPort>50399</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
        <!--IISUrl>http://localhost:50399/</IISUrl-->
-          <IISUrl>http://4cast.azurewebsites.net:50399/</IISUrl>          
+          <IISUrl></IISUrl>          
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
