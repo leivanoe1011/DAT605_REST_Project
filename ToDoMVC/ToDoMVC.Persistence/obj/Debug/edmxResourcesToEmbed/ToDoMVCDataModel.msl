@@ -5,15 +5,17 @@
       <EntityTypeMapping TypeName="ToDoMVCModel.Item">
         <MappingFragment StoreEntitySet="Item">
           <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="ToDoName" ColumnName="ToDoName" />
+          <ScalarProperty Name="ToDoId" ColumnName="ToDoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ToDoes">
       <EntityTypeMapping TypeName="ToDoMVCModel.ToDo">
         <MappingFragment StoreEntitySet="ToDo">
-          <ScalarProperty Name="UserName" ColumnName="UserName" />
           <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -21,6 +23,7 @@
       <EntityTypeMapping TypeName="ToDoMVCModel.User">
         <MappingFragment StoreEntitySet="User">
           <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

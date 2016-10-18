@@ -37,7 +37,7 @@ namespace ToDoMVC.Infrastructure
         /// Use DBSet intities to create a new User repository;
         /// </summary>
         /// <returns></returns>
-        private IRepository<User> CreateUserRepository()
+        internal IRepository<User> CreateUserRepository()
         {
             var users = CreateUserDbSet();
 
@@ -66,6 +66,14 @@ namespace ToDoMVC.Infrastructure
 
             return new Mapper(otherMap);
         }
+
+        private IUnitOfWork CreateUnitOfWork()
+        {
+            var itemFactory = new ItemFactory();
+            var todoFactory = new ToDoFactory();
+
+            return new UnitOfWork(CreateUserRepository(), todoFactory.CreateToDoRepository(), itemFactory.CreateItemRepository());
+        }
         
         /// <summary>
         /// Create a new UserDataAdapter with a repository, and two mapper classes.
@@ -73,11 +81,11 @@ namespace ToDoMVC.Infrastructure
         /// <returns></returns>
         public IDataAdapter<DataUser> CreateUserAdapter()
         {
-            var repos = CreateUserRepository();
+            var uow = CreateUnitOfWork();
             var mapper = CreateDTOMapper();
             var backMapper = CreateUserMapper();
 
-            return new UserDataAdapter(repos, mapper, backMapper);
+            return new UserDataAdapter(uow, mapper, backMapper);
         }
     }
 }

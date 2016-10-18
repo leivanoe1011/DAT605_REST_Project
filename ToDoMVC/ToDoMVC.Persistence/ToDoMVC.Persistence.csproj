@@ -52,32 +52,33 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Item.cs">
-      <DependentUpon>ToDoMvcDataModel.tt</DependentUpon>
+      <DependentUpon>ToDoMVCDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ItemRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="ToDo.cs">
-      <DependentUpon>ToDoMvcDataModel.tt</DependentUpon>
+      <DependentUpon>ToDoMVCDataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="ToDoMvcDataModel.Context.cs">
+    <Compile Include="ToDoMVCDataModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ToDoMvcDataModel.Context.tt</DependentUpon>
+      <DependentUpon>ToDoMVCDataModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="ToDoMvcDataModel.cs">
+    <Compile Include="ToDoMVCDataModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ToDoMvcDataModel.tt</DependentUpon>
+      <DependentUpon>ToDoMVCDataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="ToDoMvcDataModel.Designer.cs">
+    <Compile Include="ToDoMVCDataModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ToDoMvcDataModel.edmx</DependentUpon>
+      <DependentUpon>ToDoMVCDataModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="ToDoRepository.cs" />
+    <Compile Include="UnitOfWork.cs" />
     <Compile Include="User.cs">
-      <DependentUpon>ToDoMvcDataModel.tt</DependentUpon>
+      <DependentUpon>ToDoMVCDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="UserRepository.cs" />
   </ItemGroup>
@@ -94,27 +95,27 @@
   <ItemGroup>
     <None Include="App.Config" />
     <None Include="packages.config" />
-    <EntityDeploy Include="ToDoMvcDataModel.edmx">
+    <EntityDeploy Include="ToDoMVCDataModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ToDoMvcDataModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>ToDoMVCDataModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="ToDoMvcDataModel.edmx.diagram">
-      <DependentUpon>ToDoMvcDataModel.edmx</DependentUpon>
+    <None Include="ToDoMVCDataModel.edmx.diagram">
+      <DependentUpon>ToDoMVCDataModel.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ToDoMvcDataModel.Context.tt">
+    <Content Include="ToDoMVCDataModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ToDoMvcDataModel.edmx</DependentUpon>
-      <LastGenOutput>ToDoMvcDataModel.Context.cs</LastGenOutput>
+      <DependentUpon>ToDoMVCDataModel.edmx</DependentUpon>
+      <LastGenOutput>ToDoMVCDataModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="ToDoMvcDataModel.tt">
+    <Content Include="ToDoMVCDataModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ToDoMvcDataModel.edmx</DependentUpon>
-      <LastGenOutput>ToDoMvcDataModel.cs</LastGenOutput>
+      <DependentUpon>ToDoMVCDataModel.edmx</DependentUpon>
+      <LastGenOutput>ToDoMVCDataModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

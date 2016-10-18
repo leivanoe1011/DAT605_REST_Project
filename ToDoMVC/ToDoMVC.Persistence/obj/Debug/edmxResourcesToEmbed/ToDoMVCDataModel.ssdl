@@ -2,45 +2,52 @@
 <Schema Namespace="ToDoMVCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="Item">
     <Key>
-      <PropertyRef Name="Name" />
+      <PropertyRef Name="Id" />
     </Key>
     <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="ToDoName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ToDoId" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="ToDo">
     <Key>
-      <PropertyRef Name="Name" />
+      <PropertyRef Name="Id" />
     </Key>
     <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="User">
     <Key>
-      <PropertyRef Name="Name" />
+      <PropertyRef Name="Id" />
     </Key>
     <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Id" Type="int" Nullable="false" />
   </EntityType>
   <Association Name="FK_Item_ToDo">
-    <End Role="ToDo" Type="Self.ToDo" Multiplicity="1" />
+    <End Role="ToDo" Type="Self.ToDo" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="Item" Type="Self.Item" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="ToDo">
-        <PropertyRef Name="Name" />
+        <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="Item">
-        <PropertyRef Name="ToDoName" />
+        <PropertyRef Name="ToDoId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_ToDo_User">
-    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="ToDo" Type="Self.ToDo" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="User">
-        <PropertyRef Name="Name" />
+        <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="ToDo">
-        <PropertyRef Name="UserName" />
+        <PropertyRef Name="UserId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

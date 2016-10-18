@@ -12,29 +12,29 @@ namespace ToDoMVC.Business
 {
     public class ToDoDataAdapter : IDataAdapter<DataToDo>
     {
-        private readonly IRepository<ToDo> _repository;
+        private readonly IUnitOfWork _uow;
         private readonly IMapper _objectToDtoMapper;
         private readonly IMapper _dtoToObjectMapper;
 
-        public ToDoDataAdapter(IRepository<ToDo> repository, IMapper objectToDtoMapper, IMapper dtoToObjectMapper)
+        public ToDoDataAdapter(IUnitOfWork uow, IMapper objectToDtoMapper, IMapper dtoToObjectMapper)
         {
-            _repository = repository;
+            _uow = uow;
             _objectToDtoMapper = objectToDtoMapper;
             _dtoToObjectMapper = dtoToObjectMapper;
         }
 
         public void Delete(DataToDo entity)
         {
-            var allToDos = _repository.GetAll();
+            var allToDos = _uow.ToDoRepository.GetAll();
 
-            var todoToDelete = allToDos.FirstOrDefault(x => x.Name.Equals(entity.Name));
-            
-            _repository.Delete(todoToDelete);
+            var todoToDelete = allToDos.FirstOrDefault(x => x.Id.Equals(entity.Id));
+
+            _uow.ToDoRepository.Delete(todoToDelete);
         }
 
         public IEnumerable<DataToDo> GetAll()
         {
-            var allToDos = _repository.GetAll();
+            var allToDos = _uow.ToDoRepository.GetAll();
             var dataToDos = new List<DataToDo>();
 
             foreach (var i in allToDos)
@@ -47,17 +47,26 @@ namespace ToDoMVC.Business
 
         public DataToDo GetById(int id)
         {
-            throw new NotImplementedException();
+            var allToDos = _uow.ToDoRepository.GetAll();
+
+            return _objectToDtoMapper.Map<ToDo, DataToDo>(allToDos.FirstOrDefault(x => x.Id.Equals(id)));
+        }
+
+        public void Update(DataToDo entity)
+        {
+            var allToDos = _uow.ToDoRepository.GetAll();
+
+            var todoToUpdate = allToDos.FirstOrDefault(x => x.Id.Equals(entity.Id));
+
+            todoToUpdate.Name = entity.Name;
+
+            _uow.ToDoRepository.Save();
         }
 
         public void Insert(DataToDo entity)
         {
-            _repository.Insert(_dtoToObjectMapper.Map<DataToDo, ToDo>(entity));
+            _uow.ToDoRepository.Insert(_dtoToObjectMapper.Map<DataToDo, ToDo>(entity));
         }
 
-        public IEnumerable<DataToDo> SearchFor()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

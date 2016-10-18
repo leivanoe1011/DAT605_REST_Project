@@ -24,8 +24,8 @@ namespace ToDoMVC.Contracts
 
         void Insert(T entity);
         void Delete(T entity);
-        IEnumerable<T> SearchFor();
         IEnumerable<T> GetAll();
         T GetById(int id);
+        void Update(T entity);
     }
 }

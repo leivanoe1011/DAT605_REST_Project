@@ -21,7 +21,7 @@ namespace ToDoMVC.Infrastructure
             return new ToDoMVCEntities();
         }
 
-        private IRepository<Item> CreateItemRepository()
+        internal IRepository<Item> CreateItemRepository()
         {
             var items = CreateItemDbSet();
 
@@ -41,15 +41,22 @@ namespace ToDoMVC.Infrastructure
 
             return new Mapper(othermap);
         }
-            
+
+        private IUnitOfWork CreateUnitOfWork()
+        {
+            var userFactory = new UserFactory();
+            var todoFactory = new ToDoFactory();
+
+            return new UnitOfWork(userFactory.CreateUserRepository(), todoFactory.CreateToDoRepository(), CreateItemRepository());
+        }
 
         public IDataAdapter<DataItem> CreateItemAdapter()
         {
-            var repos = CreateItemRepository();
+            var uow = CreateUnitOfWork();
             var mapper = CreateDTOMapper();
             var backMapper = CreateItemMapper();
 
-            return new ItemDataAdapter(repos, mapper, backMapper);
+            return new ItemDataAdapter(uow, mapper, backMapper);
         }
     }
 }
