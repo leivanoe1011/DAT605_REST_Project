@@ -16,7 +16,7 @@
 * [13 Oct](#13Oct) Documentation Updates
 * [15 Oct](#15Oct) Chat notes
 * [16 Oct](#16Oct) Presentation upload 'Pull Request
-* [17 Oct](#17Oct) SQL Connection
+* [17 Oct](#17Oct) SQL Connection and App Deployment
 
 ---
 <a name="17Oct">*17 Oct, 2016*</a>
@@ -65,6 +65,9 @@ CREATE TABLE tblUser(
 ```
 
 ![tables](images/ShowTables.jpg)
+
+* App deployment - create new app and point to GITHUB.
+deployed to http://4cast.azurewebsites.net
 
 ---
 <a name="16Oct">*16 Oct, 2016*</a>
