@@ -15,5 +15,6 @@ namespace ToDoMVC.Domain
     public class DataUser
     {
         public string Name { get; set; }
+        public int Id { get; set; }
     }
 }

@@ -26,37 +26,54 @@ namespace ToDoMVC.Service.Controllers
             _todoDataAdapter = _factory.CreateToDoAdapter();
         }
 
+        [HttpGet]
         public IEnumerable<DataToDo> Get()
         {
             return _todoDataAdapter.GetAll();
         }
 
+        [HttpGet]
         public DataToDo Get(int id)
         {
             return _todoDataAdapter.GetById(id);
         }
 
         [HttpPost]
-        public HttpResponseMessage Post(string name, string user)
+        public HttpResponseMessage Post(string name, int userid, int id)
         {
             var newToDo = new DataToDo()
             {
                 Name = name,
-                UserName = user
+                UserId = userid,
+                Id = id
             };
 
             _todoDataAdapter.Insert(newToDo);
             return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
 
-        public HttpResponseMessage Delete(string name)
+        [HttpDelete]
+        public HttpResponseMessage Delete(int id)
         {
             var todoToDelete = new DataToDo()
             {
-                Name = name
+                Id = id
             };
 
             _todoDataAdapter.Delete(todoToDelete);
+            return new HttpResponseMessage(HttpStatusCode.Accepted);
+        }
+
+        [HttpPut]
+        public HttpResponseMessage Put(int id, string name)
+        {
+            var ToDoToPut = new DataToDo()
+            {
+                Id = id,
+                Name = name
+            };
+
+            _todoDataAdapter.Update(ToDoToPut);
             return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
     }

@@ -66,11 +66,12 @@ namespace ToDoMVC.Service.Controllers
         /// <param name="name"></param>
         /// <returns></returns>
         [HttpPost]
-        public HttpResponseMessage Post(string name)
+        public HttpResponseMessage Post(string name, int id)
         {
             var newUser = new DataUser()
             {
-                Name = name
+                Name = name,
+                Id = id
             }; 
 
             _userDataAdapter.Insert(newUser);
@@ -82,14 +83,28 @@ namespace ToDoMVC.Service.Controllers
         /// </summary>
         /// <param name="name"></param>
         /// <returns></returns>
-        public HttpResponseMessage Delete(string name)
+        [HttpDelete]
+        public HttpResponseMessage Delete(int id)
         {
             var userToDelete = new DataUser()
             {
-                Name = name
+                Id = id
             };
 
             _userDataAdapter.Delete(userToDelete);
+            return new HttpResponseMessage(HttpStatusCode.Accepted);
+        }
+
+        [HttpPut]
+        public HttpResponseMessage Put(int id, string name)
+        {
+            var userToPut = new DataUser()
+            {
+                Name = name,
+                Id = id
+            };
+
+            _userDataAdapter.Update(userToPut);
             return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
     }

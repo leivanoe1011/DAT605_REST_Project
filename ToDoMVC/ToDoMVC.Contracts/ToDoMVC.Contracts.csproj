@@ -38,11 +38,21 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="ToDoMVC.Persistence">
+      <HintPath>..\ToDoMVC.Service\Bin\ToDoMVC.Persistence.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IDataAdapter.cs" />
     <Compile Include="IRepository.cs" />
+    <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ToDoMVC.Domain\ToDoMVC.Domain.csproj">
+      <Project>{290C044B-D01F-4684-839A-5B8FA000C18C}</Project>
+      <Name>ToDoMVC.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -28,38 +28,55 @@ namespace ToDoMVC.Service.Controllers
             _itemDataAdapter = _factory.CreateItemAdapter();
         }
 
+        [HttpGet]
         public IEnumerable<DataItem> Get()
         {
             return _itemDataAdapter.GetAll();
         }
 
+        [HttpGet]
         public DataItem Get(int id)
         {
             return _itemDataAdapter.GetById(id);
         }
 
         [HttpPost]
-        public HttpResponseMessage Post(string name, string todo)
+        public HttpResponseMessage Post(string name, int todoid, int id)
         {
             var newItem = new DataItem()
             {
                 Name = name,
-                ToDoName = todo
+                ToDoId = todoid,
+                Id = id
             };
 
             _itemDataAdapter.Insert(newItem);
             return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
 
-        public HttpResponseMessage Delete(string name)
+        [HttpDelete]
+        public HttpResponseMessage Delete(int id)
         {
             var itemToDelete = new DataItem()
             {
-                Name = name
+                Id = id
             };
 
 
             _itemDataAdapter.Delete(itemToDelete);
+            return new HttpResponseMessage(HttpStatusCode.Accepted);
+        }
+
+        [HttpPut]
+        public HttpResponseMessage Put(int id, string name)
+        {
+            var itemToPut = new DataItem()
+            {
+                Name = name,
+                Id = id
+            };
+
+            _itemDataAdapter.Update(itemToPut);
             return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
     }

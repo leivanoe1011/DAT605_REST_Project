@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
@@ -27,13 +28,13 @@ namespace ToDoMVC.Business
 
     public class UserDataAdapter : IDataAdapter<DataUser>
     {
-        private readonly IRepository<User> _repository;
+        private readonly IUnitOfWork _uow;
         private readonly IMapper _objectToDtoMapper;
         private readonly IMapper _dtoToObjectMapper;
 
-        public UserDataAdapter(IRepository<User> repository, IMapper objectToDtoMapper, IMapper dtoToObjectMapper)
+        public UserDataAdapter(IUnitOfWork uow, IMapper objectToDtoMapper, IMapper dtoToObjectMapper)
         {
-            _repository = repository;
+            _uow = uow;
             _objectToDtoMapper = objectToDtoMapper;
             _dtoToObjectMapper = dtoToObjectMapper;
         }
@@ -44,7 +45,7 @@ namespace ToDoMVC.Business
         /// <param name="entity"></param>
         public void Insert(DataUser entity)
         {
-            _repository.Insert(_dtoToObjectMapper.Map<DataUser, User>(entity));
+            _uow.UserRepository.Insert(_dtoToObjectMapper.Map<DataUser, User>(entity));
         }
 
         /// <summary>
@@ -53,29 +54,21 @@ namespace ToDoMVC.Business
         /// <param name="entity"></param>
         public void Delete(DataUser entity)
         {
-            var allUsers = _repository.GetAll().ToList();
+            var allUsers = _uow.UserRepository.GetAll().ToList();
             
-            var userToDelete = allUsers.FirstOrDefault(x => x.Name.Equals(entity.Name));
+            var userToDelete = allUsers.FirstOrDefault(x => x.Id.Equals(entity.Id));
 
-            _repository.Delete(userToDelete);
+            _uow.UserRepository.Delete(userToDelete);
         }
 
-        /// <summary>
-        /// Search for range of Users. NYI
-        /// </summary>
-        /// <returns></returns>
-        public IEnumerable<DataUser> SearchFor()
-        {
-            throw new NotImplementedException();
-        }
-
+       
         /// <summary>
         /// Pull all DBSet Users from repository, map to DTO via automapper, return as List.
         /// </summary>
         /// <returns></returns>
         public IEnumerable<DataUser> GetAll()
         {
-            var allUsers = _repository.GetAll();
+            var allUsers = _uow.UserRepository.GetAll();
             var dataUsers = new List<DataUser>();
 
             foreach (var i in allUsers)
@@ -93,7 +86,20 @@ namespace ToDoMVC.Business
         /// <returns></returns>
         public DataUser GetById(int id)
         {
-            throw new NotImplementedException();
+            var allUsers = _uow.UserRepository.GetAll();
+
+            return _objectToDtoMapper.Map<User, DataUser>(allUsers.FirstOrDefault(x => x.Id.Equals(id)));
+        }
+
+        public void Update(DataUser entity)
+        {
+            var allUsers = _uow.UserRepository.GetAll();
+
+            var userToUpdate = allUsers.FirstOrDefault(x => x.Id.Equals(entity.Id));
+
+            userToUpdate.Name = entity.Name;
+
+            _uow.UserRepository.Save();
         }
     }
 }

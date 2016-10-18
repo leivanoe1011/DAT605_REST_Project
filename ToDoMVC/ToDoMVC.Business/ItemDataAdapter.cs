@@ -12,29 +12,29 @@ namespace ToDoMVC.Business
 {
     public class ItemDataAdapter : IDataAdapter<DataItem>
     {
-        private readonly IRepository<Item> _repository;
+        private readonly IUnitOfWork _uow;
         private readonly IMapper _objectToDtoMapper;
         private readonly IMapper _dtoToObjectMapper;
 
-        public ItemDataAdapter (IRepository<Item> repository, IMapper objectToDtoMapper, IMapper dtoToObjectMapper)
+        public ItemDataAdapter (IUnitOfWork uow, IMapper objectToDtoMapper, IMapper dtoToObjectMapper)
         {
-            _repository = repository;
+            _uow = uow;
             _objectToDtoMapper = objectToDtoMapper;
             _dtoToObjectMapper = dtoToObjectMapper;
         }
 
         public void Delete(DataItem entity)
         {
-            var allItems = _repository.GetAll().ToList();
+            var allItems = _uow.ItemRepository.GetAll().ToList();
 
-            var itemToDelete = allItems.FirstOrDefault(x => x.Name.Equals(entity.Name));
+            var itemToDelete = allItems.FirstOrDefault(x => x.Id.Equals(entity.Id));
 
-            _repository.Delete(itemToDelete);
+            _uow.ItemRepository.Delete(itemToDelete);
         }
 
         public IEnumerable<DataItem> GetAll()
         {
-            var allItems = _repository.GetAll();
+            var allItems = _uow.ItemRepository.GetAll();
             var dataObjects = new List<DataItem>();
 
             foreach (var i in allItems)
@@ -47,17 +47,27 @@ namespace ToDoMVC.Business
 
         public DataItem GetById(int id)
         {
-            throw new NotImplementedException();
+            var allItems = _uow.ItemRepository.GetAll();
+
+            return _objectToDtoMapper.Map<Item, DataItem>(allItems.FirstOrDefault(x => x.Id.Equals(id)));
+        }
+
+        public void Update(DataItem entity)
+        {
+            var allItems = _uow.ItemRepository.GetAll();
+
+            var itemToUpdate = allItems.FirstOrDefault(x => x.Id.Equals(entity.Id));
+
+            itemToUpdate.Id = entity.Id;
+
+            _uow.ItemRepository.Save();
         }
 
         public void Insert(DataItem entity)
         {
-            _repository.Insert(_dtoToObjectMapper.Map<DataItem, Item>(entity));
+            _uow.ItemRepository.Insert(_dtoToObjectMapper.Map<DataItem, Item>(entity));
         }
 
-        public IEnumerable<DataItem> SearchFor()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

@@ -15,7 +15,9 @@ namespace ToDoMVC.Persistence
     public partial class Item
     {
         public string Name { get; set; }
-        public string ToDoName { get; set; }
+        public int ToDoId { get; set; }
+        public int Id { get; set; }
+    
         public virtual ToDo ToDo { get; set; }
     }
 }

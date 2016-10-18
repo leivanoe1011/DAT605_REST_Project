@@ -8,3 +8,9 @@ C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contrac
 C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\obj\Debug\ToDoMVC.Contracts.csprojResolveAssemblyReference.cache
 C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\obj\Debug\ToDoMVC.Contracts.dll
 C:\Users\mjbradvica\Documents\GitHub\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\obj\Debug\ToDoMVC.Contracts.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\bin\Debug\ToDoMVC.Persistence.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\bin\Debug\EntityFramework.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\bin\Debug\ToDoMVC.Persistence.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\bin\Debug\EntityFramework.xml
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\bin\Debug\ToDoMVC.Domain.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\bin\Debug\ToDoMVC.Domain.pdb
