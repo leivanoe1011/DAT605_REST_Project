@@ -31,6 +31,30 @@
 * installed MS Visual Studio Community Edition
 * downloaded and opened project from Github, Rebuild All
 
+database is still up and active.
+
+from Excel->Data->New Database Query->SQL Server ODBC
+
+| | |
+|--------------|----------------------------|
+| Server Name: | 4cast.database.windows.net |
+| Database:    | Todo_SQL |
+
+
+From Michael's email, this web api is now hosted on Azure.
+
+http://team4cast.azurewebsites.net/api/user
+http://team4cast.azurewebsites.net/api/todo
+http://team4cast.azurewebsites.net/api/item
+
+
+
+```
+SELECT * FROM SYSOBJECTS WHERE xtype = 'U';
+SELECT * FROM tblTodo;
+SELECT * FROM tblTodoList;
+SELECT * FROM tblUser;
+```
 ---
 <a name="17Oct">*17 Oct, 2016*</a>
 * Create (Azure) SQL Tables
