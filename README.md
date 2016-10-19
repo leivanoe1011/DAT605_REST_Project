@@ -27,23 +27,18 @@
 * installed MS Visual Studio Community Edition
 * downloaded and opened project from Github, Rebuild All
 
-database is still up and active.
-
-from Excel->Data->New Database Query->SQL Server ODBC
+database migrated to new server on azure. (from current 4cast.data...)
+Connection details:
 
 | | |
-|--------------|----------------------------|
-| Server Name: | 4cast.database.windows.net |
-| Database:    | Todo_SQL |
+|--------------|--------------------------------|
+| Server Name: | team4cast.database.windows.net |
+| Database:    | todomvc                        |
+| U:           | team4castadmin                 |
+| P: | |
 
-
-From Michael's email, this web api is now hosted on Azure.
-
-http://team4cast.azurewebsites.net/api/user
-http://team4cast.azurewebsites.net/api/todo
-http://team4cast.azurewebsites.net/api/item
-
-
+Easily view database contents from Excel:
+_Data->New Database Query->SQL Server ODBC_
 
 ```
 SELECT * FROM SYSOBJECTS WHERE xtype = 'U';
@@ -51,6 +46,15 @@ SELECT * FROM Item;
 SELECT * FROM ToDo;
 SELECT * FROM User;
 ```
+
+API is up and running. User Authentication working.
+User Postman to test.
+
+http://team4cast.azurewebsites.net/api/user
+http://team4cast.azurewebsites.net/api/todo
+http://team4cast.azurewebsites.net/api/item
+
+
 ---
 <a name="18Oct">*18 Oct, 2016*</a>
 
