@@ -47,9 +47,9 @@ http://team4cast.azurewebsites.net/api/item
 
 ```
 SELECT * FROM SYSOBJECTS WHERE xtype = 'U';
-SELECT * FROM tblTodo;
-SELECT * FROM tblTodoList;
-SELECT * FROM tblUser;
+SELECT * FROM Item;
+SELECT * FROM ToDo;
+SELECT * FROM User;
 ```
 ---
 <a name="18Oct">*18 Oct, 2016*</a>
