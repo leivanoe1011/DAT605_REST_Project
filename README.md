@@ -28,6 +28,8 @@
 * built alternative .NET API and started porting source files to it. [slow but working](http://4castdemo.azurewebsites.net)
 * researched using Visual Studio in VM (PaaS) in Azure. Requires MSDN subscription. (expensive)
 * rebuilding Windows VM with WAY more disk and RAM.
+* installed MS Visual Studio Community Edition
+* downloaded and opened project from Github, Rebuild All
 
 ---
 <a name="17Oct">*17 Oct, 2016*</a>
