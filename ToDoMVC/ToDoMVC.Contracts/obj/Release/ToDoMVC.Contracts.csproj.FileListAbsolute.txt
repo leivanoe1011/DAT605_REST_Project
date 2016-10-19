@@ -1,0 +1,11 @@
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\bin\Release\ToDoMVC.Contracts.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\bin\Release\ToDoMVC.Contracts.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\bin\Release\ToDoMVC.Domain.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\bin\Release\ToDoMVC.Persistence.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\bin\Release\EntityFramework.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\bin\Release\ToDoMVC.Domain.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\bin\Release\ToDoMVC.Persistence.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\bin\Release\EntityFramework.xml
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\obj\Release\ToDoMVC.Contracts.csprojResolveAssemblyReference.cache
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\obj\Release\ToDoMVC.Contracts.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Contracts\obj\Release\ToDoMVC.Contracts.pdb

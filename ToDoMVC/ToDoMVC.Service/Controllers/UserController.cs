@@ -10,6 +10,7 @@ using ToDoMVC.Contracts;
 using ToDoMVC.Persistence;
 using ToDoMVC.Domain;
 using ToDoMVC.Infrastructure;
+using ToDoMVC.Service.Auth;
 
 namespace ToDoMVC.Service.Controllers
 {
@@ -23,6 +24,7 @@ namespace ToDoMVC.Service.Controllers
     /// ToDoMVC.Infrastructure Factories
     /// </summary>
 
+    [BasicAuth]
     public class UserController : ApiController
     {
         private readonly IDataAdapter<DataUser> _userDataAdapter;

@@ -1,0 +1,15 @@
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Release\ToDoMVC.Business.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Release\ToDoMVC.Business.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Release\AutoMapper.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Release\ToDoMVC.Contracts.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Release\ToDoMVC.Domain.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Release\ToDoMVC.Persistence.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Release\EntityFramework.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Release\ToDoMVC.Contracts.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Release\ToDoMVC.Domain.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Release\ToDoMVC.Persistence.pdb
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Release\AutoMapper.xml
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\bin\Release\EntityFramework.xml
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\obj\Release\ToDoMVC.Business.csprojResolveAssemblyReference.cache
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\obj\Release\ToDoMVC.Business.dll
+D:\Programs\Programming Projects\Repositories\DAT605_REST_Project\ToDoMVC\ToDoMVC.Business\obj\Release\ToDoMVC.Business.pdb
