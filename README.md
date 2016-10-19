@@ -17,6 +17,17 @@
 * [15 Oct](#15Oct) Chat notes
 * [16 Oct](#16Oct) Presentation upload 'Pull Request
 * [17 Oct](#17Oct) SQL Connection and App Deployment
+* [18 Oct](#18Oct) Code Diagram and deploy Web API to Azure
+
+---
+<a name="18Oct">*18 Oct, 2016*</a>
+* tried porting build to Azure - failed
+* traced and tried modifying build files - 711 files generated in repo!
+* reverted changes and tried pushing from Win VS on VM -- crashed hard
+* built template todomvc app to test connectivity. [works great](http://mygitwebapptest.azurewebsites.net)
+* built alternative .NET API and started porting source files to it. [slow but working](http://4castdemo.azurewebsites.net)
+* researched using Visual Studio in VM (PaaS) in Azure. Requires MSDN subscription. (expensive)
+* rebuilding Windows VM with WAY more disk and RAM.
 
 ---
 <a name="17Oct">*17 Oct, 2016*</a>
