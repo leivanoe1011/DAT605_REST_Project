@@ -7,9 +7,11 @@ using System.Web.Http;
 using ToDoMVC.Contracts;
 using ToDoMVC.Domain;
 using ToDoMVC.Infrastructure;
+using ToDoMVC.Service.Auth;
 
 namespace ToDoMVC.Service.Controllers
 {
+    [BasicAuth]
     public class ToDoController : ApiController
     {
         private readonly IDataAdapter<DataToDo> _todoDataAdapter;
@@ -29,52 +31,89 @@ namespace ToDoMVC.Service.Controllers
         [HttpGet]
         public IEnumerable<DataToDo> Get()
         {
-            return _todoDataAdapter.GetAll();
+            try
+            {
+                return _todoDataAdapter.GetAll();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         [HttpGet]
         public DataToDo Get(int id)
         {
-            return _todoDataAdapter.GetById(id);
+            try
+            {
+                return _todoDataAdapter.GetById(id);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+           
         }
 
         [HttpPost]
         public HttpResponseMessage Post(string name, int userid, int id)
         {
-            var newToDo = new DataToDo()
+            try
             {
-                Name = name,
-                UserId = userid,
-                Id = id
-            };
+                var newToDo = new DataToDo()
+                {
+                    Name = name,
+                    UserId = userid,
+                    Id = id
+                };
 
-            _todoDataAdapter.Insert(newToDo);
-            return new HttpResponseMessage(HttpStatusCode.Accepted);
+                _todoDataAdapter.Insert(newToDo);
+                return new HttpResponseMessage(HttpStatusCode.Accepted);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         [HttpDelete]
         public HttpResponseMessage Delete(int id)
         {
-            var todoToDelete = new DataToDo()
+            try
             {
-                Id = id
-            };
+                var todoToDelete = new DataToDo()
+                {
+                    Id = id
+                };
 
-            _todoDataAdapter.Delete(todoToDelete);
-            return new HttpResponseMessage(HttpStatusCode.Accepted);
+                _todoDataAdapter.Delete(todoToDelete);
+                return new HttpResponseMessage(HttpStatusCode.Accepted);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         [HttpPut]
         public HttpResponseMessage Put(int id, string name)
         {
-            var ToDoToPut = new DataToDo()
+            try
             {
-                Id = id,
-                Name = name
-            };
+                var ToDoToPut = new DataToDo()
+                {
+                    Id = id,
+                    Name = name
+                };
 
-            _todoDataAdapter.Update(ToDoToPut);
-            return new HttpResponseMessage(HttpStatusCode.Accepted);
+                _todoDataAdapter.Update(ToDoToPut);
+                return new HttpResponseMessage(HttpStatusCode.Accepted);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

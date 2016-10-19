@@ -9,9 +9,11 @@ using ToDoMVC.Business;
 using ToDoMVC.Contracts;
 using ToDoMVC.Domain;
 using ToDoMVC.Infrastructure;
+using ToDoMVC.Service.Auth;
 
 namespace ToDoMVC.Service.Controllers
 {
+    [BasicAuth]
     public class ItemController : ApiController
     {
         private readonly IDataAdapter<DataItem> _itemDataAdapter;
@@ -31,53 +33,88 @@ namespace ToDoMVC.Service.Controllers
         [HttpGet]
         public IEnumerable<DataItem> Get()
         {
-            return _itemDataAdapter.GetAll();
+            try
+            {
+                return _itemDataAdapter.GetAll();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         [HttpGet]
         public DataItem Get(int id)
         {
-            return _itemDataAdapter.GetById(id);
+            try
+            {
+                return _itemDataAdapter.GetById(id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         [HttpPost]
         public HttpResponseMessage Post(string name, int todoid, int id)
         {
-            var newItem = new DataItem()
+            try
             {
-                Name = name,
-                ToDoId = todoid,
-                Id = id
-            };
+                var newItem = new DataItem()
+                {
+                    Name = name,
+                    ToDoId = todoid,
+                    Id = id
+                };
 
-            _itemDataAdapter.Insert(newItem);
-            return new HttpResponseMessage(HttpStatusCode.Accepted);
+                _itemDataAdapter.Insert(newItem);
+                return new HttpResponseMessage(HttpStatusCode.Accepted);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         [HttpDelete]
         public HttpResponseMessage Delete(int id)
         {
-            var itemToDelete = new DataItem()
+            try
             {
-                Id = id
-            };
+                var itemToDelete = new DataItem()
+                {
+                    Id = id
+                };
 
 
-            _itemDataAdapter.Delete(itemToDelete);
-            return new HttpResponseMessage(HttpStatusCode.Accepted);
+                _itemDataAdapter.Delete(itemToDelete);
+                return new HttpResponseMessage(HttpStatusCode.Accepted);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         [HttpPut]
         public HttpResponseMessage Put(int id, string name)
         {
-            var itemToPut = new DataItem()
+            try
             {
-                Name = name,
-                Id = id
-            };
+                var itemToPut = new DataItem()
+                {
+                    Name = name,
+                    Id = id
+                };
 
-            _itemDataAdapter.Update(itemToPut);
-            return new HttpResponseMessage(HttpStatusCode.Accepted);
+                _itemDataAdapter.Update(itemToPut);
+                return new HttpResponseMessage(HttpStatusCode.Accepted);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }
