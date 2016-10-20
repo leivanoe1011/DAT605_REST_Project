@@ -4,6 +4,12 @@ using System.Linq;
 using System.Net.Http.Headers;
 using System.Web.Http;
 
+    /// <summary>
+    /// Responsibilities:
+    /// The cs will oversee the structure of the API 
+    /// that will be communicating with our web app.
+    /// </summary>
+
 namespace ToDoMVC.Service
 {
     public static class WebApiConfig
@@ -20,7 +26,11 @@ namespace ToDoMVC.Service
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new {id = RouteParameter.Optional}
             );
-
+            
+            /// The API structure i below. 
+            /// Action GET, PUT, POST, DELETE
+            /// Controller UserController, ToDoController, ItemController
+            
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{action}/{id}",
