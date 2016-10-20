@@ -9,6 +9,12 @@ using ToDoMVC.Domain;
 using ToDoMVC.Infrastructure;
 using ToDoMVC.Service.Auth;
 
+     /// <summary>
+     /// Responsibilities:
+     /// The controller that will be reference by the WebApiConfig cs.
+     /// api/{Controller}/{Action}
+     /// </summary>
+
 namespace ToDoMVC.Service.Controllers
 {
     [BasicAuth]
@@ -28,6 +34,8 @@ namespace ToDoMVC.Service.Controllers
             _todoDataAdapter = _factory.CreateToDoAdapter();
         }
 
+        /// HttpGet will be the action that will be referenced by the API call
+        /// Then the method below will be called.
         [HttpGet]
         public IEnumerable<DataToDo> Get()
         {
@@ -41,6 +49,9 @@ namespace ToDoMVC.Service.Controllers
             }
         }
 
+
+        /// HttpGet will be the action that will be referenced by the API call
+        /// Then the method below will be called.
         [HttpGet]
         public DataToDo Get(int id)
         {
@@ -56,6 +67,9 @@ namespace ToDoMVC.Service.Controllers
            
         }
 
+
+        /// HttpPost will be the action that will be referenced by the API call
+        /// Then the method below will be called.
         [HttpPost]
         public HttpResponseMessage Post(string name, int userid, int id)
         {
@@ -77,6 +91,9 @@ namespace ToDoMVC.Service.Controllers
             }
         }
 
+
+        /// HttpDelete will be the action that will be referenced by the API call
+        /// Then the method below will be called.
         [HttpDelete]
         public HttpResponseMessage Delete(int id)
         {
@@ -96,6 +113,9 @@ namespace ToDoMVC.Service.Controllers
             }
         }
 
+
+        /// HttpPut will be the action that will be referenced by the API call
+        /// Then the method below will be called.
         [HttpPut]
         public HttpResponseMessage Put(int id, string name)
         {
