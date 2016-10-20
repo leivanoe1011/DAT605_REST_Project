@@ -18,21 +18,56 @@
 * [16 Oct](#16Oct) Presentation upload 'Pull Request
 * [17 Oct](#17Oct) SQL Connection and App Deployment
 * [18 Oct](#18Oct) Code Diagram and deploy Web API to Azure
+* [19 Oct](#19Oct) More deployment troubleshooting. API hosted now.
+
+---
+<a name="19Oct">*19 Oct, 2016*</a>
+
+* rebuilding Windows VM with WAY more disk and RAM.
+* installed MS Visual Studio Community Edition
+* downloaded and opened project from Github, Rebuild All
+
+database migrated to new server on azure. (from current 4cast.data...)
+Connection details:
+
+| | |
+|--------------|--------------------------------|
+| Server Name: | team4cast.database.windows.net |
+| Database:    | todomvc                        |
+| U:           | team4castadmin                 |
+| P: | |
+
+Easily view database contents from Excel:
+_Data->New Database Query->SQL Server ODBC_
+
+```
+SELECT * FROM SYSOBJECTS WHERE xtype = 'U';
+SELECT * FROM Item;
+SELECT * FROM ToDo;
+SELECT * FROM User;
+```
+
+API is up and running. User Authentication working.
+User Postman to test.
+
+http://team4cast.azurewebsites.net/api/user
+http://team4cast.azurewebsites.net/api/todo
+http://team4cast.azurewebsites.net/api/item
+
 
 ---
 <a name="18Oct">*18 Oct, 2016*</a>
+
 * tried porting build to Azure - failed
 * traced and tried modifying build files - 711 files generated in repo!
 * reverted changes and tried pushing from Win VS on VM -- crashed hard
 * built template todomvc app to test connectivity. [works great](http://mygitwebapptest.azurewebsites.net)
 * built alternative .NET API and started porting source files to it. [slow but working](http://4castdemo.azurewebsites.net)
 * researched using Visual Studio in VM (PaaS) in Azure. Requires MSDN subscription. (expensive)
-* rebuilding Windows VM with WAY more disk and RAM.
-* installed MS Visual Studio Community Edition
-* downloaded and opened project from Github, Rebuild All
 
 ---
 <a name="17Oct">*17 Oct, 2016*</a>
+
 * Create (Azure) SQL Tables
 
 
