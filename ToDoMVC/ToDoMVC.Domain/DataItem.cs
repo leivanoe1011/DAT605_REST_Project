@@ -12,5 +12,7 @@ namespace ToDoMVC.Domain
         public int ToDoId { get; set; }
         public int Id { get; set; }
         //public virtual DataToDo ToDo { get; set; }
+        public int isCompleted { get; set; }
     }
 }
+

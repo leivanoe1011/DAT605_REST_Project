@@ -59,6 +59,7 @@ namespace ToDoMVC.Business
             var itemToUpdate = allItems.FirstOrDefault(x => x.Id.Equals(entity.Id));
 
             itemToUpdate.Name = entity.Name;
+            itemToUpdate.isCompleted = entity.isCompleted;
 
             _uow.ItemRepository.Save();
         }

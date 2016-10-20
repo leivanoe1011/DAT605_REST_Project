@@ -65,7 +65,8 @@ namespace ToDoMVC.Service.Controllers
                 {
                     Name = name,
                     ToDoId = todoid,
-                    Id = id
+                    Id = id,
+                    isCompleted = 0
                 };
 
                 _itemDataAdapter.Insert(newItem);
@@ -105,7 +106,8 @@ namespace ToDoMVC.Service.Controllers
                 var itemToPut = new DataItem()
                 {
                     Name = name,
-                    Id = id
+                    Id = id,
+                    isCompleted = 1
                 };
 
                 _itemDataAdapter.Update(itemToPut);

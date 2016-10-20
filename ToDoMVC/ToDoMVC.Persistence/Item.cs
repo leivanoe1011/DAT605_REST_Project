@@ -17,6 +17,7 @@ namespace ToDoMVC.Persistence
         public string Name { get; set; }
         public int ToDoId { get; set; }
         public int Id { get; set; }
+        public Nullable<int> isCompleted { get; set; }
     
         public virtual ToDo ToDo { get; set; }
     }

@@ -8,6 +8,7 @@
     <Property Name="ToDoId" Type="Int32" Nullable="false" />
     <Property Name="Id" Type="Int32" Nullable="false" />
     <NavigationProperty Name="ToDo" Relationship="Self.FK_Item_ToDo" FromRole="Item" ToRole="ToDo" />
+    <Property Name="isCompleted" Type="Int32" />
   </EntityType>
   <EntityType Name="ToDo">
     <Key>
